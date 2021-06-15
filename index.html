@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
@@ -32,7 +35,7 @@
                 <h1>Batdorf & Bronson / Dancing Goats and Fontis Water Monthly Delivery</h1>
             </div>
         </div>
-        <form action="" id="fontisForm">
+        <form action="confirmation.html" id="fontisForm">
             <!-- Section One (Water) : BEGIN -->
             <div>
                 <h2>Step One</h2>
@@ -160,7 +163,7 @@
                             <div>
                                 <label for="phone">Phone:</label>
                                 <input type="tel" id="phone" name="info"
-                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
                                 required>
                                 <small>Format: 123-456-7890</small>
                             </div>
@@ -222,7 +225,7 @@
                     <p>Water: <span>Good for</span> your health</p>
                     <p>Coffee: Good for <span>you</span>r heart</p>
                 </div>
-                <p>- we should more of it</p>
+                <p>- we should drink more of it</p>
             </div>
         </div>
     </aside>
@@ -304,7 +307,8 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/bouncer.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
         document.getElementById("year").innerHTML = new Date().getFullYear();
     </script>   

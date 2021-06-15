@@ -78,3 +78,5 @@ function calculateTotal()
     document.getElementById('formTotalInput').value = "$" + totalPrice.toFixed(2);
     document.getElementById('formTotalVis').innerHTML = totalPrice.toFixed(2);
 }
+
+var validate = new Bouncer('fontisForm');
