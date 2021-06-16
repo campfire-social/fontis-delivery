@@ -10,8 +10,8 @@
     <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <div>
+    <header class="header">
+        <div class="container">
             <div>
                 <img src="https://via.placeholder.com/200x65" alt="Fontis Water logo" />
             </div>
@@ -32,207 +32,213 @@
                         <img src="https://via.placeholder.com/200x65" alt="Fontis Water logo" />
                     </div>
                 </div>
-                <h1>Batdorf & Bronson / Dancing Goats and Fontis Water Monthly Delivery</h1>
+                <h1 class="visually-hidden">Batdorf & Bronson / Dancing Goats and Fontis Water Monthly Delivery</h1>
             </div>
         </div>
-        <form name="Fontis Water and Coffee Delivery Form" action="confirmation.html" id="fontisForm" netlify-honeypot="79537b3153f5b09c32defdb06d4dea35" data-netlify="true">
+        <form name="Fontis Water and Coffee Delivery Form" action="/confirmation" id="fontisForm" netlify-honeypot="79537b3153f5b09c32defdb06d4dea35" data-netlify="true">
             <!-- Section One (Water) : BEGIN -->
-            <div>
-                <p class="hidden">
-                    <label>Don’t fill this out if you’re human: <input name="79537b3153f5b09c32defdb06d4dea35" /></label>
-                </p>
-                <h2>Step One</h2>
-                <fieldset>
-                    <legend>
-                        Select your bottle quantity
-                    </legend>
-                    <div>
-                        <!-- Two Bottles -->
-                        <div>
-                            <figure>
-                            <img src="https://via.placeholder.com/350x150" alt="two water bottles"/>  
-                            </figure>
-                            <div id="twoBottles">
-                                <label>
-                                    <input type="radio" id="twoBottlesInput" name="water" value="2 bottles of water $59.94" onclick="calculateTotal()">                              
-                                    <span>2 Bottles <span>(10 Gallons Total) $59.94</span></span>
-                                </label>
+            <div class="section">
+                <div class="container">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="79537b3153f5b09c32defdb06d4dea35" /></label>
+                    </p>
+                    <h2>Step One</h2>
+                    <fieldset>
+                        <legend>
+                            Select your bottle quantity
+                        </legend>
+                        <div class="grid grid--center">
+                            <!-- Two Bottles -->
+                            <div class="grid__cell">
+                                <figure>
+                                <img src="https://via.placeholder.com/350x150" alt="two water bottles"/>  
+                                </figure>
+                                <div id="twoBottles">
+                                    <label>
+                                        <input type="radio" id="twoBottlesInput" name="water" value="2 bottles of water $59.94" onclick="calculateTotal()">                              
+                                        <span>2 Bottles <span class="visually-hidden">(10 Gallons Total) $59.94</span></span>
+                                    </label>
+                                </div>
+                                <p id="twoBottlesPrice">$27.98</p>
                             </div>
-                            <p id="twoBottlesPrice">$27.98</p>
-                        </div>
-                        <!-- Four Bottles -->
-                        <div>
-                            <figure>
-                                <img src="https://via.placeholder.com/350x150" alt="four water bottles"/>  
-                            </figure>
-                            <div id="fourBottles">
-                                <label>
-                                    <input type="radio" id="fourBottlesInput" name="water" value="4 bottles of water $43.80" onclick="calculateTotal()">
-                                    <span>4 Bottles <span>(20 Gallons Total) $43.80</span></span>
-                                </label>
+                            <!-- Four Bottles -->
+                            <div class="grid__cell">
+                                <figure>
+                                    <img src="https://via.placeholder.com/350x150" alt="four water bottles"/>  
+                                </figure>
+                                <div id="fourBottles">
+                                    <label>
+                                        <input type="radio" id="fourBottlesInput" name="water" value="4 bottles of water $43.80" onclick="calculateTotal()">
+                                        <span>4 Bottles <span class="visually-hidden">(20 Gallons Total) $43.80</span></span>
+                                    </label>
+                                </div>
+                                <p id="fourBottlesPrice">$43.80</p>
                             </div>
-                            <p id="fourBottlesPrice">$43.80</p>
-                        </div>
-                        <!-- 6 Bottles -->
-                        <div>
-                            <figure>
-                                <img src="https://via.placeholder.com/350x150" alt="six water bottles"/>  
-                            </figure>
-                            <div id="sixBottles">
-                                <label for="sixBottlesInput">
-                                    <input type="radio" id="sixBottlesInput" name="water" value="6 bottles of water $59.94" onclick="calculateTotal()">
-                                    <span>6 Bottles<span>(30 Gallons Total) $59.94</span></span>
-                                </label>
+                            <!-- 6 Bottles -->
+                            <div class="grid__cell">
+                                <figure>
+                                    <img src="https://via.placeholder.com/350x150" alt="six water bottles"/>  
+                                </figure>
+                                <div id="sixBottles">
+                                    <label for="sixBottlesInput">
+                                        <input type="radio" id="sixBottlesInput" name="water" value="6 bottles of water $59.94" onclick="calculateTotal()">
+                                        <span>6 Bottles<span class="visually-hidden">(30 Gallons Total) $59.94</span></span>
+                                    </label>
+                                </div>
+                                <p id="sixBottlesPrice">$59.94</p>
                             </div>
-                            <p id="sixBottlesPrice">$59.94</p>
                         </div>
-                    </div>
-                </fieldset>
-                <p>*price includes a water dispenser for $12.oo per month</p>
+                    </fieldset>
+                    <p>*price includes a water dispenser for $12.oo per month</p>
+                </div>
             </div>
             <!-- Section One (Water) : END -->
             <!-- Section Two (Coffee) : BEGIN -->
-            <div>
-                <h2>Step Two</h2>
-                <fieldset>
-                    <legend>Select your coffee quantity</legend>
-                    <div>
-                        <!-- One Bag -->
-                        <div>
-                            <figure>
-                            <img src="https://via.placeholder.com/350x150" alt="one bag of coffee" />  
-                            </figure>
-                            <div id="oneBag">
-                                <label>
-                                    <input type="radio" id="oneBagInput" name="coffee" value="1 bag of coffee $15.00" onclick="calculateTotal()">
-                                    <span>1 <span>bag of coffee $15.00</span></span>
-                                </label>
+            <div class="section section--dark-blue">
+                <div class="container">
+                    <h2>Step Two</h2>
+                    <fieldset>
+                        <legend>Select your coffee quantity</legend>
+                        <div class="grid grid--center">
+                            <!-- One Bag -->
+                            <div class="grid__cell">
+                                <figure>
+                                <img src="https://via.placeholder.com/350x150" alt="one bag of coffee" />  
+                                </figure>
+                                <div id="oneBag">
+                                    <label>
+                                        <input type="radio" id="oneBagInput" name="coffee" value="1 bag of coffee $15.00" onclick="calculateTotal()">
+                                        <span>1 bag<span class="visually-hidden"> of coffee $15.00</span></span>
+                                    </label>
+                                </div>
+                                <p id="oneBagPrice">$15.00</p>
                             </div>
-                            <p id="oneBagPrice">$15.00</p>
-                        </div>
-                        <!-- Two Bags -->
-                        <div>
-                            <figure>
-                                <img src="https://via.placeholder.com/350x150" alt="two bags of coffee" />  
-                            </figure>
-                            <div id="twoBags">
-                                <label>
-                                    <input type="radio" id="twoBagsInput" name="coffee" value="2 bags of coffee $30.00" onclick="calculateTotal()">
-                                    <span>2<span> bags of coffee $30.00</span></span>
-                                </label>
+                            <!-- Two Bags -->
+                            <div class="grid__cell">
+                                <figure>
+                                    <img src="https://via.placeholder.com/350x150" alt="two bags of coffee" />  
+                                </figure>
+                                <div id="twoBags">
+                                    <label>
+                                        <input type="radio" id="twoBagsInput" name="coffee" value="2 bags of coffee $30.00" onclick="calculateTotal()">
+                                        <span>2 bags<span class="visually-hidden"> of coffee $30.00</span></span>
+                                    </label>
+                                </div>
+                                <p id="twoBagsPrice">$30.00</p>
                             </div>
-                            <p id="twoBagsPrice">$30.00</p>
-                        </div>
-                        <!-- Three Bags -->
-                        <div>
-                            <figure>
-                                <img src="https://via.placeholder.com/350x150"
-                                alt="three bags of coffee" />  
-                            </figure>
-                            <div id="threeBags">
-                                <label>
-                                <input type="radio" id="threeBagsInput" name="coffee" value="3 bags of coffee $45.00" onclick="calculateTotal()">
-                                    <span>3 <span>bags of coffee $45.00</span></span>
-                                </label>
+                            <!-- Three Bags -->
+                            <div class="grid__cell">
+                                <figure>
+                                    <img src="https://via.placeholder.com/350x150"
+                                    alt="three bags of coffee" />  
+                                </figure>
+                                <div id="threeBags">
+                                    <label>
+                                    <input type="radio" id="threeBagsInput" name="coffee" value="3 bags of coffee $45.00" onclick="calculateTotal()">
+                                        <span>3 bags<span class="visually-hidden"> of coffee $45.00</span></span>
+                                    </label>
+                                </div>
+                                <p id="threeBagsPrice">$45.00</p>
                             </div>
-                            <p id="threeBagsPrice">$45.00</p>
                         </div>
-                    </div>
-                    <div>
-                        <label>
-                            <span>Kind:</span>
-                            <select name="coffeeType" id="coffeeSelect">
-                                <option value="">Please choose an option</option>
-                                <option value="regular">Regular</option>
-                                <option value="decaf">Decaf</option>
-                                <option value="organic">Organic</option>
-                            </select>
-                        </label>
-                    </div>
-                </fieldset>
+                        <div>
+                            <label>
+                                <span>Kind:</span>
+                                <select name="coffeeType" id="coffeeSelect">
+                                    <option value="">Please choose an option</option>
+                                    <option value="regular">Regular</option>
+                                    <option value="decaf">Decaf</option>
+                                    <option value="organic">Organic</option>
+                                </select>
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
             </div>
             <!-- Section Two (Coffee) : END -->
             <!-- Section Three (Info) : BEGIN -->
-            <div>
-                <h2>Step Three</h2>
-                <fieldset>
-                    <legend>Enter your delivery information</legend>
-                    <div>
-                        <!-- Personal Info -->
+            <div class="section section--light-gray">
+                <div class="container">
+                    <h2>Step Three</h2>
+                    <fieldset>
+                        <legend>Enter your delivery information</legend>
                         <div>
+                            <!-- Personal Info -->
                             <div>
-                                <label>
-                                    <span>Name:</span>
-                                    <input type="text" name="name" id="name" required minlength="4" maxlength="72">
-                                </label>
-                            </div>
-                            <div>
-                                <label>
-                                    <span>Phone:</span>
-                                    <input type="tel" id="phone" name="phone"
-                                pattern="\d{3}[\-]\d{3}[\-]\d{4}"required>
-                                </label>
-                                <small>Format: 123-456-7890</small>
-                            </div>
-                            <div>
-                                <label>
-                                    <span>Email:</span>
-                                    <input type="email" id="email" name="email" required>
-                                </label>
-                            </div>
-                        </div>
-                        <!-- Payment Info -->
-                        <div>
-                            <fieldset>
-                                <legend>Payment Preference</legend>
                                 <div>
-                                    <div>
-                                        <label>
-                                            <input type="radio" id="credit" name="paymentPreference" value="Credit Card">
-                                            <span>Credit Card</span>
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <label>
-                                            <input type="radio" id="paypal" name="paymentPreference" value="PayPal">
-                                            <span>PayPal</span>
-                                        </label>
-                                    </div>
-                                    <div>
-                                        <label>
-                                            <input type="radio" id="apple" name="paymentPreference" value="Apple Pay">
-                                            <span>Apple Pay</span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <div>
-                                <div id="formTotal">
                                     <label>
-                                        <input id="formTotalInput" name="total" type="hidden" value="0.00">
-                                        <span>
-                                            Total: $<span id="formTotalVis">0.00</span>
-                                        </span>
+                                        <span>Name:</span>
+                                        <input type="text" name="name" id="name" required minlength="4" maxlength="72">
                                     </label>
                                 </div>
                                 <div>
-                                    <button type="submit">Place Order</button>
-                                    <img src="https://via.placeholder.com/140x100" alt="delivery van">
+                                    <label>
+                                        <span>Phone:</span>
+                                        <input type="tel" id="phone" name="phone"
+                                    pattern="\d{3}[\-]\d{3}[\-]\d{4}"required>
+                                    </label>
+                                    <small>Format: 123-456-7890</small>
                                 </div>
                                 <div>
-                                    <p>You will recive a call within 24 hours
-                                        from our team for monthly delivery details.</p>
+                                    <label>
+                                        <span>Email:</span>
+                                        <input type="email" id="email" name="email" required>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Payment Info -->
+                            <div>
+                                <fieldset>
+                                    <legend>Payment Preference</legend>
+                                    <div>
+                                        <div>
+                                            <label>
+                                                <input type="radio" id="credit" name="paymentPreference" value="Credit Card">
+                                                <span>Credit Card</span>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                <input type="radio" id="paypal" name="paymentPreference" value="PayPal">
+                                                <span>PayPal</span>
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                <input type="radio" id="apple" name="paymentPreference" value="Apple Pay">
+                                                <span>Apple Pay</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div>
+                                    <div id="formTotal">
+                                        <label>
+                                            <input id="formTotalInput" name="total" type="hidden" value="0.00">
+                                            <span>
+                                                Total: $<span id="formTotalVis">0.00</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <button type="submit">Place Order</button>
+                                        <img src="https://via.placeholder.com/140x100" alt="delivery van">
+                                    </div>
+                                    <div>
+                                        <p>You will recive a call within 24 hours
+                                            from our team for monthly delivery details.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </fieldset>
+                    </fieldset>
+                </div>
             </div>
             <!-- Section Three (Info) : END -->
         </form>
     </main>
-    <aside>
-        <div>
+    <aside class="section section--light-blue">
+        <div class="container">
             <div>
                 <div>
                     <p>Water: <span>Good for</span> your health</p>
@@ -242,11 +248,11 @@
             </div>
         </div>
     </aside>
-    <footer>
-        <div>
-            <div>
+    <footer class="section section--dark-blue">
+        <div class="container">
+            <div class="grid">
                 <!-- Footer Info -->
-                <div>
+                <div class="grid__cell">
                     <!-- Footer Logo -->
                     <div>
                         <img src="https://via.placeholder.com/200x65" alt="Fontis Water logo" />
@@ -267,48 +273,50 @@
                     </address>
                 </div>
                 <!-- Footer Nav -->
-                <nav>
-                    <div>
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><a href="">Water Delivery</a></li>
-                            <li><a href="">Private Label Water</a></li>
-                            <li><a href="">Water Filtration</a></li>
-                            <li><a href="">Break Room Services</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Products</h4>
-                        <ul>
-                            <li><a href="">Fontis Bottled Water</a></li>
-                            <li><a href="">Coffee & Tea</a></li>
-                            <li><a href="">Equipment</a></li>
-                            <li><a href="">Other Beverages</a></li>
-                            <li><a href="">Breakroom Supplies</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>About Us</h4>
-                        <ul>
-                            <li><a href="">Our Water</a></li>
-                            <li><a href="">Our Staff</a></li>
-                            <li><a href="">FAQs</a></li>
-                            <li><a href="">Events</a></li>
-                            <li><a href="">Partners</a></li>
-                            <li><a href="">Media Resources</a></li>
-                            <li><a href="">Our Blog</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Contact Us</h4>
-                        <ul>
-                            <li><a href="">Sign Up</a></li>
-                            <li><a href="">My Account</a></li>
-                            <li><a href="">Request a Quote</a></li>
-                            <li><a href="">Water Quality Report</a></li>
-                            <li><a href="">Donation Sponsorship Application</a></li>
-                            <li><a href="">Terms and Conditions</a></li>
-                        </ul>
+                <nav class="grid__cell">
+                    <div class="grid">
+                        <div class="grid__cell">
+                            <h4>Our Services</h4>
+                            <ul>
+                                <li><a href="">Water Delivery</a></li>
+                                <li><a href="">Private Label Water</a></li>
+                                <li><a href="">Water Filtration</a></li>
+                                <li><a href="">Break Room Services</a></li>
+                            </ul>
+                        </div>
+                        <div class="grid__cell">
+                            <h4>Products</h4>
+                            <ul>
+                                <li><a href="">Fontis Bottled Water</a></li>
+                                <li><a href="">Coffee & Tea</a></li>
+                                <li><a href="">Equipment</a></li>
+                                <li><a href="">Other Beverages</a></li>
+                                <li><a href="">Breakroom Supplies</a></li>
+                            </ul>
+                        </div>
+                        <div class="grid__cell">
+                            <h4>About Us</h4>
+                            <ul>
+                                <li><a href="">Our Water</a></li>
+                                <li><a href="">Our Staff</a></li>
+                                <li><a href="">FAQs</a></li>
+                                <li><a href="">Events</a></li>
+                                <li><a href="">Partners</a></li>
+                                <li><a href="">Media Resources</a></li>
+                                <li><a href="">Our Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="grid__cell">
+                            <h4>Contact Us</h4>
+                            <ul>
+                                <li><a href="">Sign Up</a></li>
+                                <li><a href="">My Account</a></li>
+                                <li><a href="">Request a Quote</a></li>
+                                <li><a href="">Water Quality Report</a></li>
+                                <li><a href="">Donation Sponsorship Application</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>

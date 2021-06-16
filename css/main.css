@@ -1,3 +1,5 @@
+/*** CSS Reset ***/
+
 /* Box sizing rules */
 *,
 *::before,
@@ -98,4 +100,65 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/*** Layout ***/
+
+.header {
+    background-color: #133454;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 86%;
+    margin: 0 auto; 
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 6rem 0;
+}
+
+.section--dark-blue {
+    background-color: #133454;
+    color: #ffffff;
+}
+
+.section--light-blue {
+    background-color: #7aa5ba;
+}
+
+.section--light-gray {
+    background-color: #efefef;
+}
+
+/*** Grid ***/
+
+.grid {
+    display: flex; 
+    margin: 0 -1.5rem;
+}
+
+.grid--center {
+    align-items: center;
+}
+
+.grid__cell {
+    flex: 1 1 auto; 
+}
+
+/*** Utility ***/
+
+.hidden {
+    display: none;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
 }
