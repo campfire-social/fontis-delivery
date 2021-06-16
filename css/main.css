@@ -144,6 +144,25 @@ legend {
     background-color: #efefef;
 }
 
+.section__heading {
+    color: #a98360;
+    text-transform: uppercase;
+}
+
+.section__legend {
+    color: #133454;
+    margin-bottom: 3rem;
+}
+
+.section__footer {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.section__disclaimer {
+    font-size: 1.5rem;
+}
+
 /*** Grid ***/
 
 .grid {
@@ -192,10 +211,14 @@ legend {
     background-color: red;
 }
 
+.option-box__input:checked ~ .option-box__button {
+    background-color: #133454;
+}
+
 .option-box__button {
     order: 2;
     display: inline-flex; 
-    padding: .75rem 1.5rem; 
+    padding: .75rem 3rem; 
     background-color: #6b95ab;
     border: 6px solid #133454;
     color: #ffffff;
@@ -205,7 +228,9 @@ legend {
     line-height: auto;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     margin-bottom: 2.5rem; 
+
 }
 
 .option-box__button-num {
@@ -229,6 +254,8 @@ legend {
 
 .option-box__img {
     order: 1;
+    width: 75%;
+    margin: 0 auto;
     margin-bottom: 2.5rem; 
 }
 
