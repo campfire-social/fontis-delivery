@@ -37,7 +37,7 @@
         </div>
         <form name="Fontis Water and Coffee Delivery Form" action="/confirmation" id="fontisForm" netlify-honeypot="79537b3153f5b09c32defdb06d4dea35" data-netlify="true">
             <!-- Section One (Water) : BEGIN -->
-            <div class="section">
+            <div class="section section--white">
                 <div class="container">
                     <p class="hidden">
                         <label>Don’t fill this out if you’re human: <input name="79537b3153f5b09c32defdb06d4dea35" /></label>
@@ -101,49 +101,48 @@
             <!-- Section Two (Coffee) : BEGIN -->
             <div class="section section--dark-blue">
                 <div class="container">
-                    <h2 class="text-center">Step Two</h2>
+                    <h2 class="section__heading text-center">Step Two</h2>
                     <fieldset>
-                        <legend class="text-center">Select your coffee quantity</legend>
+                        <legend class="section__legend text-center">Select your coffee quantity</legend>
                         <div class="grid grid--center">
                             <!-- One Bag -->
                             <div class="grid__cell">
-                                <figure>
-                                <img src="https://via.placeholder.com/350x150" alt="one bag of coffee" />  
-                                </figure>
-                                <div id="oneBag">
-                                    <label>
-                                        <input type="radio" id="oneBagInput" name="coffee" value="1 bag of coffee $15.00" onclick="calculateTotal()">
-                                        <span>1 bag<span class="visually-hidden"> of coffee $15.00</span></span>
-                                    </label>
-                                </div>
-                                <p id="oneBagPrice">$15.00</p>
+                                <label id="twoBottles" class="option-box">
+                                    <input class="option-box__input" type="radio" id="oneBagInput" name="coffee" value="1 bag of coffee $15.00" onclick="calculateTotal()">
+                                    <span class="option-box__select"></span>
+                                    <span class="option-box__button">
+                                        <span class="option-box__button-num">1 Bag</span>
+                                        <span class="visually-hidden">of coffee</span>
+                                    </span>
+                                    <span class="option-box__price" id="twoBottlesPrice">$15.00</span>
+                                    <img class="option-box__img" src="/img/one_bag@4x.png" alt="one bag of coffee"/>  
+                                </label>
                             </div>
                             <!-- Two Bags -->
                             <div class="grid__cell">
-                                <figure>
-                                    <img src="https://via.placeholder.com/350x150" alt="two bags of coffee" />  
-                                </figure>
-                                <div id="twoBags">
-                                    <label>
-                                        <input type="radio" id="twoBagsInput" name="coffee" value="2 bags of coffee $30.00" onclick="calculateTotal()">
-                                        <span>2 bags<span class="visually-hidden"> of coffee $30.00</span></span>
-                                    </label>
-                                </div>
-                                <p id="twoBagsPrice">$30.00</p>
+                                <label id="twoBottles" class="option-box">
+                                    <input class="option-box__input" type="radio" id="twoBagsInput" name="coffee" value="2 bags of coffee $30.00" onclick="calculateTotal()">
+                                    <span class="option-box__select"></span>
+                                    <span class="option-box__button">
+                                        <span class="option-box__button-num">2 Bags</span>
+                                        <span class="visually-hidden">of coffee</span>
+                                    </span>
+                                    <span class="option-box__price" id="twoBottlesPrice">$30.00</span>
+                                    <img class="option-box__img" src="/img/two_bags@4x.png" alt="two bags of coffee"/>  
+                                </label>
                             </div>
                             <!-- Three Bags -->
                             <div class="grid__cell">
-                                <figure>
-                                    <img src="https://via.placeholder.com/350x150"
-                                    alt="three bags of coffee" />  
-                                </figure>
-                                <div id="threeBags">
-                                    <label>
-                                    <input type="radio" id="threeBagsInput" name="coffee" value="3 bags of coffee $45.00" onclick="calculateTotal()">
-                                        <span>3 bags<span class="visually-hidden"> of coffee $45.00</span></span>
-                                    </label>
-                                </div>
-                                <p id="threeBagsPrice">$45.00</p>
+                                <label id="twoBottles" class="option-box">
+                                    <input class="option-box__input" type="radio" id="threeBagsInput" name="coffee" value="3 bags of coffee $45.00" onclick="calculateTotal()">
+                                    <span class="option-box__select"></span>
+                                    <span class="option-box__button">
+                                        <span class="option-box__button-num">3 Bags</span>
+                                        <span class="visually-hidden">of coffee</span>
+                                    </span>
+                                    <span class="option-box__price" id="twoBottlesPrice">$45.00</span>
+                                    <img class="option-box__img" src="/img/three_bags@4x.png" alt="three bags of coffee"/>  
+                                </label>
                             </div>
                         </div>
                         <div>

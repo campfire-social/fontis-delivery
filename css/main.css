@@ -131,6 +131,10 @@ legend {
     padding: 6rem 0;
 }
 
+.section--white {
+    background-color: #ffffff;
+}
+
 .section--dark-blue {
     background-color: #133454;
     color: #ffffff;
@@ -145,13 +149,19 @@ legend {
 }
 
 .section__heading {
-    color: #a98360;
     text-transform: uppercase;
 }
 
 .section__legend {
-    color: #133454;
     margin-bottom: 3rem;
+}
+
+.section--white .section__heading {
+    color: #a98360;
+}
+
+.section--white .section__legend {
+    color: #133454;
 }
 
 .section__footer {
@@ -182,10 +192,11 @@ legend {
 /*** Option Box ***/
 
 .option-box {
-    position: relative; 
+    position: relative;
     text-align: center;
     display: flex;
     flex-direction: column;
+    padding: 1.5rem;
 }
 
 
@@ -198,7 +209,7 @@ legend {
 }
 
 .option-box__select {
-    z-index: -1;
+    z-index: 0;
     position: absolute;
     top: 0; 
     left: 0; 
@@ -207,15 +218,24 @@ legend {
     background-color: transparent;
 }
 
-.option-box__input:checked + .option-box__select {
-    background-color: red;
-}
-
 .option-box__input:checked ~ .option-box__button {
     background-color: #133454;
 }
 
+.section--dark-blue .option-box__input:checked ~ .option-box__button {
+    background-color: #6b95ab;
+    color: #ffffff;
+
+}
+
+
+.option-box__input:checked + .option-box__select {
+    background-color: red!important;
+}
+
+
 .option-box__button {
+    z-index: 1;
     order: 2;
     display: inline-flex; 
     padding: .75rem 3rem; 
@@ -230,7 +250,14 @@ legend {
     align-items: center;
     margin: 0 auto;
     margin-bottom: 2.5rem; 
+    min-width: 320px;
 
+}
+
+.section--dark-blue .option-box__button {
+    background-color: #ffffff;
+    border-color: #6b95ab;
+    color: #133454;
 }
 
 .option-box__button-num {
@@ -248,11 +275,13 @@ legend {
     letter-spacing: 1px;
 }
 .option-box__price {
+    z-index: 1;
     order: 3;
     font-size: 2rem;
 }
 
 .option-box__img {
+    z-index: 1;
     order: 1;
     width: 75%;
     margin: 0 auto;
