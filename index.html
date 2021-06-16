@@ -53,9 +53,9 @@
                             <img src="https://via.placeholder.com/350x150" alt="two water bottles"/>  
                             </figure>
                             <div id="twoBottles">
-                                <input type="radio" id="twoBottlesInput" name="water" value="2" onclick="calculateTotal()">
-                                <label for="twoBottlesInput">
-                                    2 Bottles <span>(10 Gallons Total) $59.94</span>
+                                <label>
+                                    <input type="radio" id="twoBottlesInput" name="water" value="2" onclick="calculateTotal()">                              
+                                    <span>2 Bottles <span>(10 Gallons Total) $59.94</span></span>
                                 </label>
                             </div>
                             <p id="twoBottlesPrice">$27.98</p>
@@ -66,9 +66,9 @@
                                 <img src="https://via.placeholder.com/350x150" alt="four water bottles"/>  
                             </figure>
                             <div id="fourBottles">
-                                <input type="radio" id="fourBottlesInput" name="water" value="4" onclick="calculateTotal()">
-                                <label for="fourBottlesInput" >
-                                    4 Bottles <span>(20 Gallons Total) $43.80</span>
+                                <label>
+                                    <input type="radio" id="fourBottlesInput" name="water" value="4" onclick="calculateTotal()">
+                                    <span>4 Bottles <span>(20 Gallons Total) $43.80</span></span>
                                 </label>
                             </div>
                             <p id="fourBottlesPrice">$43.80</p>
@@ -79,9 +79,9 @@
                                 <img src="https://via.placeholder.com/350x150" alt="six water bottles"/>  
                             </figure>
                             <div id="sixBottles">
-                                <input type="radio" id="sixBottlesInput" name="water" value="6" onclick="calculateTotal()">
                                 <label for="sixBottlesInput">
-                                    6 Bottles<span>(30 Gallons Total) $59.94</span>
+                                    <input type="radio" id="sixBottlesInput" name="water" value="6" onclick="calculateTotal()">
+                                    <span>6 Bottles<span>(30 Gallons Total) $59.94</span></span>
                                 </label>
                             </div>
                             <p id="sixBottlesPrice">$59.94</p>
@@ -103,9 +103,9 @@
                             <img src="https://via.placeholder.com/350x150" alt="one bag of coffee" />  
                             </figure>
                             <div id="oneBag">
-                                <input type="radio" id="oneBagInput" name="coffee" value="1" onclick="calculateTotal()">
-                                <label for="oneBagInput">
-                                    1 <span>bag of coffee $15.00</span>
+                                <label>
+                                    <input type="radio" id="oneBagInput" name="coffee" value="1" onclick="calculateTotal()">
+                                    <span>1 <span>bag of coffee $15.00</span></span>
                                 </label>
                             </div>
                             <p id="oneBagPrice">$15.00</p>
@@ -116,9 +116,9 @@
                                 <img src="https://via.placeholder.com/350x150" alt="two bags of coffee" />  
                             </figure>
                             <div id="twoBags">
-                                <input type="radio" id="twoBagsInput" name="coffee" value="2" onclick="calculateTotal()">
-                                <label for="twoBagsInput">
-                                    2 <span>bags of coffee $30.00</span>
+                                <label>
+                                    <input type="radio" id="twoBagsInput" name="coffee" value="2" onclick="calculateTotal()">
+                                    <span>2<span> bags of coffee $30.00</span></span>
                                 </label>
                             </div>
                             <p id="twoBagsPrice">$30.00</p>
@@ -130,22 +130,24 @@
                                 alt="three bags of coffee" />  
                             </figure>
                             <div id="threeBags">
+                                <label>
                                 <input type="radio" id="threeBagsInput" name="coffee" value="3" onclick="calculateTotal()">
-                                <label for="threeBagsInput">
-                                    3 <span>bags of coffee $45.00</span>
+                                    <span>3 <span>bags of coffee $45.00</span></span>
                                 </label>
                             </div>
                             <p id="threeBagsPrice">$45.00</p>
                         </div>
                     </div>
                     <div>
-                        <label for="coffeeSelect">Kind:</label>
-                        <select name="coffee" id="coffeeSelect">
-                            <option value="">Please choose an option</option>
-                            <option value="regular">Regular</option>
-                            <option value="decaf">Decaf</option>
-                            <option value="organic">Organic</option>
-                        </select>
+                        <label>
+                            <span>Kind:</span>
+                            <select name="coffee" id="coffeeSelect">
+                                <option value="">Please choose an option</option>
+                                <option value="regular">Regular</option>
+                                <option value="decaf">Decaf</option>
+                                <option value="organic">Organic</option>
+                            </select>
+                        </label>
                     </div>
                 </fieldset>
             </div>
@@ -159,20 +161,24 @@
                         <!-- Personal Info -->
                         <div>
                             <div>
-                                <label for="name">Name:</label>
-                                <input type="text" id="name" name="info" required
-                                minlength="4" maxlength="72">
+                                <label>
+                                    <span>Name:</span>
+                                    <input type="text" name="name" id="name" name="info" required minlength="4" maxlength="72">
+                                </label>
                             </div>
                             <div>
-                                <label for="phone">Phone:</label>
-                                <input type="tel" id="phone" name="info"
-                                pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-                                required>
+                                <label>
+                                    <span>Phone:</span>
+                                    <input type="tel" id="phone" name="info"
+                                pattern="\d{3}[\-]\d{3}[\-]\d{4}"required>
+                                </label>
                                 <small>Format: 123-456-7890</small>
                             </div>
                             <div>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="info" required>
+                                <label>
+                                    <span>Email:</span>
+                                    <input type="email" id="email" name="info" required>
+                                </label>
                             </div>
                         </div>
                         <!-- Payment Info -->
@@ -202,8 +208,12 @@
                             </fieldset>
                             <div>
                                 <div id="formTotal">
-                                    <input id="formTotalInput" name="formTotalInput" type="hidden" value="0.00">
-                                    <p>Total: $<span id="formTotalVis">0.00</span></p>
+                                    <label>
+                                        <input id="formTotalInput" name="formTotalInput" type="hidden" value="0.00">
+                                        <span>
+                                            Total: $<span id="formTotalVis">0.00</span>
+                                        </span>
+                                    </label>
                                 </div>
                                 <div>
                                     <button type="submit">Place Order</button>
