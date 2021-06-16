@@ -1,14 +1,14 @@
 var theForm = document.forms["fontisForm"];
 
 var water_prices = new Array();
-water_prices["2"]=27.98;
-water_prices["4"]=43.80;
-water_prices["6"]=59.94;
+water_prices["2 bottles of water $27.98"]=27.98;
+water_prices["4 bottles of water $43.80"]=43.80;
+water_prices["6 bottles of water $59.94"]=59.94;
 
 var coffee_prices = new Array();
-coffee_prices["1"]=15.00;
-coffee_prices["2"]=30.00;
-coffee_prices["3"]=45.00;
+coffee_prices["1 bag of coffee $15.00"]=15.00;
+coffee_prices["2 bags of coffee $30.00"]=30.00;
+coffee_prices["3 bags of coffee $45.00"]=45.00;
 
 function getWaterPrice()
 {

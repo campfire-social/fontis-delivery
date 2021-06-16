@@ -54,7 +54,7 @@
                             </figure>
                             <div id="twoBottles">
                                 <label>
-                                    <input type="radio" id="twoBottlesInput" name="water" value="2" onclick="calculateTotal()">                              
+                                    <input type="radio" id="twoBottlesInput" name="water" value="2 bottles of water $59.94" onclick="calculateTotal()">                              
                                     <span>2 Bottles <span>(10 Gallons Total) $59.94</span></span>
                                 </label>
                             </div>
@@ -67,7 +67,7 @@
                             </figure>
                             <div id="fourBottles">
                                 <label>
-                                    <input type="radio" id="fourBottlesInput" name="water" value="4" onclick="calculateTotal()">
+                                    <input type="radio" id="fourBottlesInput" name="water" value="4 bottles of water $43.80" onclick="calculateTotal()">
                                     <span>4 Bottles <span>(20 Gallons Total) $43.80</span></span>
                                 </label>
                             </div>
@@ -80,7 +80,7 @@
                             </figure>
                             <div id="sixBottles">
                                 <label for="sixBottlesInput">
-                                    <input type="radio" id="sixBottlesInput" name="water" value="6" onclick="calculateTotal()">
+                                    <input type="radio" id="sixBottlesInput" name="water" value="6 bottles of water $59.94" onclick="calculateTotal()">
                                     <span>6 Bottles<span>(30 Gallons Total) $59.94</span></span>
                                 </label>
                             </div>
@@ -104,7 +104,7 @@
                             </figure>
                             <div id="oneBag">
                                 <label>
-                                    <input type="radio" id="oneBagInput" name="coffee" value="1" onclick="calculateTotal()">
+                                    <input type="radio" id="oneBagInput" name="coffee" value="1 bag of coffee $15.00" onclick="calculateTotal()">
                                     <span>1 <span>bag of coffee $15.00</span></span>
                                 </label>
                             </div>
@@ -117,7 +117,7 @@
                             </figure>
                             <div id="twoBags">
                                 <label>
-                                    <input type="radio" id="twoBagsInput" name="coffee" value="2" onclick="calculateTotal()">
+                                    <input type="radio" id="twoBagsInput" name="coffee" value="2 bags of coffee $30.00" onclick="calculateTotal()">
                                     <span>2<span> bags of coffee $30.00</span></span>
                                 </label>
                             </div>
@@ -131,7 +131,7 @@
                             </figure>
                             <div id="threeBags">
                                 <label>
-                                <input type="radio" id="threeBagsInput" name="coffee" value="3" onclick="calculateTotal()">
+                                <input type="radio" id="threeBagsInput" name="coffee" value="3 bags of coffee $45.00" onclick="calculateTotal()">
                                     <span>3 <span>bags of coffee $45.00</span></span>
                                 </label>
                             </div>
@@ -141,7 +141,7 @@
                     <div>
                         <label>
                             <span>Kind:</span>
-                            <select name="coffee" id="coffeeSelect">
+                            <select name="coffeeType" id="coffeeSelect">
                                 <option value="">Please choose an option</option>
                                 <option value="regular">Regular</option>
                                 <option value="decaf">Decaf</option>
@@ -163,13 +163,13 @@
                             <div>
                                 <label>
                                     <span>Name:</span>
-                                    <input type="text" name="name" id="name" name="info" required minlength="4" maxlength="72">
+                                    <input type="text" name="name" id="name" required minlength="4" maxlength="72">
                                 </label>
                             </div>
                             <div>
                                 <label>
                                     <span>Phone:</span>
-                                    <input type="tel" id="phone" name="info"
+                                    <input type="tel" id="phone" name="phone"
                                 pattern="\d{3}[\-]\d{3}[\-]\d{4}"required>
                                 </label>
                                 <small>Format: 123-456-7890</small>
@@ -177,7 +177,7 @@
                             <div>
                                 <label>
                                     <span>Email:</span>
-                                    <input type="email" id="email" name="info" required>
+                                    <input type="email" id="email" name="email" required>
                                 </label>
                             </div>
                         </div>
@@ -188,19 +188,19 @@
                                 <div>
                                     <div>
                                         <label>
-                                            <input type="radio" id="credit" name="payment">
+                                            <input type="radio" id="credit" name="paymentPreference" value="Credit Card">
                                             <span>Credit Card</span>
                                         </label>
                                     </div>
                                     <div>
                                         <label>
-                                            <input type="radio" id="paypal" name="payment">
+                                            <input type="radio" id="paypal" name="paymentPreference" value="PayPal">
                                             <span>PayPal</span>
                                         </label>
                                     </div>
                                     <div>
                                         <label>
-                                            <input type="radio" id="apple" name="payment">
+                                            <input type="radio" id="apple" name="paymentPreference" value="Apple Pay">
                                             <span>Apple Pay</span>
                                         </label>
                                     </div>
@@ -209,7 +209,7 @@
                             <div>
                                 <div id="formTotal">
                                     <label>
-                                        <input id="formTotalInput" name="formTotalInput" type="hidden" value="0.00">
+                                        <input id="formTotalInput" name="total" type="hidden" value="0.00">
                                         <span>
                                             Total: $<span id="formTotalVis">0.00</span>
                                         </span>
