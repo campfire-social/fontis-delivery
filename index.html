@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -32,7 +32,7 @@
                         <img src="https://via.placeholder.com/200x65" alt="Fontis Water logo" />
                     </div>
                 </div>
-                <h1 class="visually-hidden">Batdorf & Bronson / Dancing Goats and Fontis Water Monthly Delivery</h1>
+                <h1 class="">Batdorf & Bronson / Dancing Goats and Fontis Water Monthly Delivery</h1>
             </div>
         </div>
         <form name="Fontis Water and Coffee Delivery Form" action="/confirmation" id="fontisForm" netlify-honeypot="79537b3153f5b09c32defdb06d4dea35" data-netlify="true">
@@ -42,50 +42,53 @@
                     <p class="hidden">
                         <label>Don’t fill this out if you’re human: <input name="79537b3153f5b09c32defdb06d4dea35" /></label>
                     </p>
-                    <h2>Step One</h2>
+                    <h2 class="text-center">Step One</h2>
                     <fieldset>
-                        <legend>
+                        <legend class="text-center">
                             Select your bottle quantity
                         </legend>
                         <div class="grid grid--center">
                             <!-- Two Bottles -->
                             <div class="grid__cell">
-                                <figure>
-                                <img src="https://via.placeholder.com/350x150" alt="two water bottles"/>  
-                                </figure>
-                                <div id="twoBottles">
-                                    <label>
-                                        <input type="radio" id="twoBottlesInput" name="water" value="2 bottles of water $59.94" onclick="calculateTotal()">                              
-                                        <span>2 Bottles <span class="visually-hidden">(10 Gallons Total) $59.94</span></span>
-                                    </label>
-                                </div>
-                                <p id="twoBottlesPrice">$27.98</p>
+                                <label id="twoBottles" class="option-box">
+                                    <input class="option-box__input" type="radio" id="twoBottlesInput" name="water" value="2 bottles of water $59.94" onclick="calculateTotal()">
+                                    <span class="option-box__select"></span>
+                                    <span class="option-box__button">
+                                        <span class="option-box__button-num">2</span>
+                                        <span class="visually-hidden"> Bottles </span> 
+                                        <span class="option-box__button-desc">(10 Gallons Total)</span>
+                                    </span>
+                                    <span class="option-box__price" id="twoBottlesPrice">$27.98</span>
+                                    <img class="option-box__img" src="/img/two_bottles@4x.png" alt="two water bottles"/>  
+                                </label>
                             </div>
                             <!-- Four Bottles -->
-                            <div class="grid__cell">
-                                <figure>
-                                    <img src="https://via.placeholder.com/350x150" alt="four water bottles"/>  
-                                </figure>
-                                <div id="fourBottles">
-                                    <label>
-                                        <input type="radio" id="fourBottlesInput" name="water" value="4 bottles of water $43.80" onclick="calculateTotal()">
-                                        <span>4 Bottles <span class="visually-hidden">(20 Gallons Total) $43.80</span></span>
-                                    </label>
-                                </div>
-                                <p id="fourBottlesPrice">$43.80</p>
+                            <div class="grid__cell option-box">
+                                <label id="twoBottles" class="option-box">
+                                    <input type="radio" class="option-box__input" id="fourBottlesInput" name="water" value="4 bottles of water $43.80" onclick="calculateTotal()">
+                                    <span class="option-box__select"></span>
+                                    <span class="option-box__button">
+                                        <span class="option-box__button-num">4</span>
+                                        <span class="visually-hidden"> Bottles </span> 
+                                        <span class="option-box__button-desc">(20 Gallons Total)</span>
+                                    </span>
+                                    <span class="option-box__price" id="twoBottlesPrice">$43.80</span>
+                                    <img class="option-box__img" src="/img/two_bottles@4x.png" alt="four water bottles"/>  
+                                </label>
                             </div>
                             <!-- 6 Bottles -->
                             <div class="grid__cell">
-                                <figure>
-                                    <img src="https://via.placeholder.com/350x150" alt="six water bottles"/>  
-                                </figure>
-                                <div id="sixBottles">
-                                    <label for="sixBottlesInput">
-                                        <input type="radio" id="sixBottlesInput" name="water" value="6 bottles of water $59.94" onclick="calculateTotal()">
-                                        <span>6 Bottles<span class="visually-hidden">(30 Gallons Total) $59.94</span></span>
-                                    </label>
-                                </div>
-                                <p id="sixBottlesPrice">$59.94</p>
+                                <label id="twoBottles" class="option-box">
+                                    <input type="radio" class="option-box__input" id="sixBottlesInput" name="water" value="6 bottles of water $59.94" onclick="calculateTotal()">
+                                    <span class="option-box__select"></span>
+                                    <span class="option-box__button">
+                                        <span class="option-box__button-num">6</span>
+                                        <span class="visually-hidden"> Bottles </span> 
+                                        <span class="option-box__button-desc">(30 Gallons Total)</span>
+                                    </span>
+                                    <span class="option-box__price" id="twoBottlesPrice">$59.94</span>
+                                    <img class="option-box__img" src="/img/two_bottles@4x.png" alt="six water bottles"/>  
+                                </label>
                             </div>
                         </div>
                     </fieldset>
@@ -96,9 +99,9 @@
             <!-- Section Two (Coffee) : BEGIN -->
             <div class="section section--dark-blue">
                 <div class="container">
-                    <h2>Step Two</h2>
+                    <h2 class="text-center">Step Two</h2>
                     <fieldset>
-                        <legend>Select your coffee quantity</legend>
+                        <legend class="text-center">Select your coffee quantity</legend>
                         <div class="grid grid--center">
                             <!-- One Bag -->
                             <div class="grid__cell">
@@ -159,9 +162,9 @@
             <!-- Section Three (Info) : BEGIN -->
             <div class="section section--light-gray">
                 <div class="container">
-                    <h2>Step Three</h2>
+                    <h2 class="text-center">Step Three</h2>
                     <fieldset>
-                        <legend>Enter your delivery information</legend>
+                        <legend class="text-center">Enter your delivery information</legend>
                         <div>
                             <!-- Personal Info -->
                             <div>

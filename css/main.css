@@ -102,6 +102,18 @@ select {
   }
 }
 
+/*** Typography ***/
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+legend {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 /*** Layout ***/
 
 .header {
@@ -112,7 +124,7 @@ select {
 .container {
     max-width: 86%;
     margin: 0 auto; 
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
 }
 
 .section {
@@ -136,7 +148,7 @@ select {
 
 .grid {
     display: flex; 
-    margin: 0 -1.5rem;
+    margin: 0 -1.25rem;
 }
 
 .grid--center {
@@ -145,7 +157,81 @@ select {
 
 .grid__cell {
     flex: 1 1 auto; 
+    padding: 1.25rem;
 }
+
+/*** Option Box ***/
+
+.option-box {
+    position: relative; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.option-box__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;;
+}
+
+.option-box__select {
+    z-index: -1;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%; 
+    background-color: transparent;
+}
+
+.option-box__input:checked + .option-box__select {
+    background-color: red;
+}
+
+.option-box__button {
+    order: 2;
+    display: inline-flex; 
+    padding: .75rem 1.5rem; 
+    background-color: #6b95ab;
+    border: 6px solid #133454;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    line-height: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem; 
+}
+
+.option-box__button-num {
+    font-size: 1.5rem;
+    font-weight: 700;
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+
+.option-box__button-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.option-box__price {
+    order: 3;
+    font-size: 2rem;
+}
+
+.option-box__img {
+    order: 1;
+    margin-bottom: 2.5rem; 
+}
+
 
 /*** Utility ***/
 
@@ -161,4 +247,8 @@ select {
     position: absolute;
     white-space: nowrap; 
     width: 1px;
+}
+
+.text-center {
+    text-align: center;
 }

@@ -80,3 +80,4 @@ function calculateTotal()
 }
 
 var validate = new Bouncer('fontisForm');
+
