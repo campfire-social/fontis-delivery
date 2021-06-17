@@ -127,6 +127,14 @@ legend {
     padding: 0 1.25rem;
 }
 
+.container--small {
+    max-width: 60%;
+}
+
+.container--extra-small {
+    max-width: 1050px;
+}
+
 .section {
     padding: 6rem 0;
 }
@@ -156,10 +164,12 @@ legend {
     margin-bottom: 3rem;
 }
 
+.section--light-gray .section__heading,
 .section--white .section__heading {
     color: #a98360;
 }
 
+.section--light-gray .section__legend,
 .section--white .section__legend {
     color: #133454;
 }
@@ -187,6 +197,16 @@ legend {
 .grid__cell {
     flex: 1 1 auto; 
     padding: 1.25rem;
+}
+
+.grid__cell--1of3 {
+    flex: 1 1 33.33%; 
+    max-width: 33.33%;
+}
+
+.grid__cell--2of3 {
+    flex: 1 1 66.66%; 
+    max-width: 66.66%; 
 }
 
 /*** Option Box ***/
@@ -288,6 +308,28 @@ legend {
     margin-bottom: 2.5rem; 
 }
 
+/*** Display Banner ***/
+
+.display-banner {
+    color: #00163a;
+}
+
+.display-banner__group {
+    padding-right: 5rem; 
+}
+
+.display-banner__text {
+    font-size: 3rem; 
+    font-weight: 700; 
+    
+    text-transform: uppercase;
+}
+
+.display-banner__cite {
+    text-align: right;
+    font-size: 2rem; 
+    font-weight: 700; 
+}
 
 /*** Utility ***/
 
@@ -307,4 +349,8 @@ legend {
 
 .text-center {
     text-align: center;
+}
+
+.text-white {
+    color: #ffffff;
 }
