@@ -308,6 +308,32 @@ legend {
     margin-bottom: 2.5rem; 
 }
 
+/*** Form Group ***/
+
+.form-group {
+    display: block;
+}
+
+.form-group + .form-group {
+    margin-top: 1.5rem;
+}
+
+.form-group__label {
+    display: block;
+    font-size: 1.5rem; 
+    font-weight: 700;
+    color: #00163a;
+    margin-bottom: .75rem;
+}
+
+.form-group__input {
+    border: 1px solid #00163a;
+    color: #00163a;
+    padding: .75rem .5rem;
+    width: 100%;
+    display: block;
+}
+
 /*** Display Banner ***/
 
 .display-banner {
