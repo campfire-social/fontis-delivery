@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fontis Water | Monthly Delivery</title>
+    <link rel="icon" href="/wp-content/themes/fontis2019/images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' id='font-awesome-css'
+        href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.7.2' type='text/css'
+        media='all' />
     <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -35,13 +42,15 @@
                 <h1 class="">Batdorf & Bronson / Dancing Goats and Fontis Water Monthly Delivery</h1>
             </div>
         </div>
-        <form name="Fontis Water and Coffee Delivery Form" action="/confirmation" id="fontisForm" netlify-honeypot="79537b3153f5b09c32defdb06d4dea35" data-netlify="true">
+        <form name="Fontis Water and Coffee Delivery Form" action="/confirmation" id="fontisForm"
+            netlify-honeypot="79537b3153f5b09c32defdb06d4dea35" data-netlify="true">
             <!-- Section One (Water) : BEGIN -->
             <div class="section section--white">
                 <div class="container">
-                    <p class="hidden">
-                        <label>Don’t fill this out if you’re human: <input name="79537b3153f5b09c32defdb06d4dea35" /></label>
-                    </p>
+                    <div class="hidden">
+                        <label>Don’t fill this out if you’re human: <input
+                                name="79537b3153f5b09c32defdb06d4dea35" /></label>
+                    </div>
                     <h2 class="section__heading text-center">Step One</h2>
                     <fieldset>
                         <legend class="section__legend text-center">
@@ -51,43 +60,49 @@
                             <!-- Two Bottles -->
                             <div class="grid__cell">
                                 <label id="twoBottles" class="option-box">
-                                    <input class="option-box__input" type="radio" id="twoBottlesInput" name="water" value="2 bottles of water $59.94" onclick="calculateTotal()">
+                                    <input class="option-box__input" type="radio" id="twoBottlesInput" name="water"
+                                        value="2 bottles of water $59.94" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
                                     <span class="option-box__button">
                                         <span class="option-box__button-num">2</span>
-                                        <span class="visually-hidden"> Bottles </span> 
+                                        <span class="visually-hidden"> Bottles </span>
                                         <span class="option-box__button-desc">(10 Gallons Total)</span>
                                     </span>
                                     <span class="option-box__price" id="twoBottlesPrice">$27.98</span>
-                                    <img class="option-box__img" src="/img/two_bottles@4x.png" alt="two water bottles"/>  
+                                    <img class="option-box__img" src="/img/two_bottles@4x.png"
+                                        alt="two water bottles" />
                                 </label>
                             </div>
                             <!-- Four Bottles -->
                             <div class="grid__cell option-box">
                                 <label id="twoBottles" class="option-box">
-                                    <input type="radio" class="option-box__input" id="fourBottlesInput" name="water" value="4 bottles of water $43.80" onclick="calculateTotal()">
+                                    <input type="radio" class="option-box__input" id="fourBottlesInput" name="water"
+                                        value="4 bottles of water $43.80" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
                                     <span class="option-box__button">
                                         <span class="option-box__button-num">4</span>
-                                        <span class="visually-hidden"> Bottles </span> 
+                                        <span class="visually-hidden"> Bottles </span>
                                         <span class="option-box__button-desc">(20 Gallons Total)</span>
                                     </span>
                                     <span class="option-box__price" id="twoBottlesPrice">$43.80</span>
-                                    <img class="option-box__img" src="/img/four_bottles@4x.png" alt="four water bottles"/>  
+                                    <img class="option-box__img" src="/img/four_bottles@4x.png"
+                                        alt="four water bottles" />
                                 </label>
                             </div>
                             <!-- 6 Bottles -->
                             <div class="grid__cell">
                                 <label id="twoBottles" class="option-box">
-                                    <input type="radio" class="option-box__input" id="sixBottlesInput" name="water" value="6 bottles of water $59.94" onclick="calculateTotal()">
+                                    <input type="radio" class="option-box__input" id="sixBottlesInput" name="water"
+                                        value="6 bottles of water $59.94" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
                                     <span class="option-box__button">
                                         <span class="option-box__button-num">6</span>
-                                        <span class="visually-hidden"> Bottles </span> 
+                                        <span class="visually-hidden"> Bottles </span>
                                         <span class="option-box__button-desc">(30 Gallons Total)</span>
                                     </span>
                                     <span class="option-box__price" id="twoBottlesPrice">$59.94</span>
-                                    <img class="option-box__img" src="/img/six_bottles@4x.png" alt="six water bottles"/>  
+                                    <img class="option-box__img" src="/img/six_bottles@4x.png"
+                                        alt="six water bottles" />
                                 </label>
                             </div>
                         </div>
@@ -108,40 +123,44 @@
                             <!-- One Bag -->
                             <div class="grid__cell">
                                 <label id="twoBottles" class="option-box">
-                                    <input class="option-box__input" type="radio" id="oneBagInput" name="coffee" value="1 bag of coffee $15.00" onclick="calculateTotal()">
+                                    <input class="option-box__input" type="radio" id="oneBagInput" name="coffee"
+                                        value="1 bag of coffee $15.00" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
                                     <span class="option-box__button">
                                         <span class="option-box__button-num">1 Bag</span>
                                         <span class="visually-hidden">of coffee</span>
                                     </span>
                                     <span class="option-box__price" id="twoBottlesPrice">$15.00</span>
-                                    <img class="option-box__img" src="/img/one_bag@4x.png" alt="one bag of coffee"/>  
+                                    <img class="option-box__img" src="/img/one_bag@4x.png" alt="one bag of coffee" />
                                 </label>
                             </div>
                             <!-- Two Bags -->
                             <div class="grid__cell">
                                 <label id="twoBottles" class="option-box">
-                                    <input class="option-box__input" type="radio" id="twoBagsInput" name="coffee" value="2 bags of coffee $30.00" onclick="calculateTotal()">
+                                    <input class="option-box__input" type="radio" id="twoBagsInput" name="coffee"
+                                        value="2 bags of coffee $30.00" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
                                     <span class="option-box__button">
                                         <span class="option-box__button-num">2 Bags</span>
                                         <span class="visually-hidden">of coffee</span>
                                     </span>
                                     <span class="option-box__price" id="twoBottlesPrice">$30.00</span>
-                                    <img class="option-box__img" src="/img/two_bags@4x.png" alt="two bags of coffee"/>  
+                                    <img class="option-box__img" src="/img/two_bags@4x.png" alt="two bags of coffee" />
                                 </label>
                             </div>
                             <!-- Three Bags -->
                             <div class="grid__cell">
                                 <label id="twoBottles" class="option-box">
-                                    <input class="option-box__input" type="radio" id="threeBagsInput" name="coffee" value="3 bags of coffee $45.00" onclick="calculateTotal()">
+                                    <input class="option-box__input" type="radio" id="threeBagsInput" name="coffee"
+                                        value="3 bags of coffee $45.00" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
                                     <span class="option-box__button">
                                         <span class="option-box__button-num">3 Bags</span>
                                         <span class="visually-hidden">of coffee</span>
                                     </span>
                                     <span class="option-box__price" id="twoBottlesPrice">$45.00</span>
-                                    <img class="option-box__img" src="/img/three_bags@4x.png" alt="three bags of coffee"/>  
+                                    <img class="option-box__img" src="/img/three_bags@4x.png"
+                                        alt="three bags of coffee" />
                                 </label>
                             </div>
                         </div>
@@ -172,12 +191,13 @@
                                 <div class="form-groups">
                                     <label class="form-group">
                                         <span class="form-group__label">Name:</span>
-                                        <input class="form-group__input" type="text" name="name" id="name" required minlength="4" maxlength="72">
-                                    </label>                              
+                                        <input class="form-group__input" type="text" name="name" id="name" required
+                                            minlength="4" maxlength="72">
+                                    </label>
                                     <label class="form-group">
                                         <span class="form-group__label">Phone:</span>
                                         <input class="form-group__input" type="tel" id="phone" name="phone"
-                                    pattern="\d{3}[\-]\d{3}[\-]\d{4}"required>
+                                            pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
                                     </label>
                                     <label class="form-group">
                                         <span class="form-group__label">Email:</span>
@@ -192,7 +212,8 @@
                                     <div>
                                         <div>
                                             <label>
-                                                <input type="radio" id="credit" name="paymentPreference" value="Credit Card">
+                                                <input type="radio" id="credit" name="paymentPreference"
+                                                    value="Credit Card">
                                                 <span>Credit Card</span>
                                             </label>
                                         </div>
@@ -204,7 +225,8 @@
                                         </div>
                                         <div>
                                             <label>
-                                                <input type="radio" id="apple" name="paymentPreference" value="Apple Pay">
+                                                <input type="radio" id="apple" name="paymentPreference"
+                                                    value="Apple Pay">
                                                 <span>Apple Pay</span>
                                             </label>
                                         </div>
@@ -220,11 +242,13 @@
                                         </label>
                                     </div>
                                     <div>
-                                        <button id="formSubmit" class="button button--submit" type="submit">Place Order</button>
+                                        <button id="formSubmit" class="button button--submit" type="submit">Place
+                                            Order</button>
                                         <img src="https://via.placeholder.com/140x100" alt="delivery van">
                                     </div>
                                     <div class="disclaimer">
-                                        <p class="disclaimer__text text-large text-gray">You will recive a call within 24 hours <br/> from our team for monthly delivery details.</p>
+                                        <p class="disclaimer__text text-large text-gray">You will recive a call within
+                                            24 hours <br /> from our team for monthly delivery details.</p>
                                     </div>
                                 </div>
                             </div>
@@ -250,24 +274,48 @@
         <div class="container container--small">
             <div class="footer__main grid">
                 <!-- Footer Info -->
-                <div class="grid__cell">
+                <div class="grid__cell footer__info">
                     <!-- Footer Logo -->
                     <div>
-                        <img src="https://via.placeholder.com/200x65" alt="Fontis Water logo" />
+                        <img src="/img/fontis_logo.png" alt="Fontis Water logo" />
                     </div>
                     <!-- Footer Social -->
-                    <ul>
-                        <li><a href=""><span>Facebook</span></a></li>
-                        <li><a href=""><span>Instagram</span></a></li>
-                        <li><a href=""><span>LinkedIn</span></a></li>
-                        <li><a href=""><span>Twitter</span></a></li>
-                    </ul>
+                    <nav class="menu menu--social">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="">
+                                    <span class="visually-hidden">Facebook</span>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="">
+                                    <span class="visually-hidden">Instagram</span>
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                             </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="">
+                                    <span
+                                        class="visually-hidden">LinkedIn</span>
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="">
+                                    <span
+                                        class="visually-hidden">Twitter</span>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                     <!-- Footer Contact -->
                     <address>
-                        Fontis Water <br/>
-                        3929 Canton Rd <br/>
-                        Marietta, GA 30066 <br/>
-                        <a href="tel:+6784941981">678.494.1981</a>
+                        Fontis Water <br />
+                        3929 Canton Rd <br />
+                        Marietta, GA 30066 <br />
+                        <a class="footer__phone" href="tel:+6784941981">678.494.1981</a>
                     </address>
                 </div>
                 <!-- Footer Nav -->
@@ -318,7 +366,8 @@
                                     <li class="menu__item"><a class="menu__link" href="">My Account</a></li>
                                     <li class="menu__item"><a class="menu__link" href="">Request a Quote</a></li>
                                     <li class="menu__item"><a class="menu__link" href="">Water Quality Report</a></li>
-                                    <li class="menu__item"><a class="menu__link" href="">Donation Sponsorship Application</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="">Donation Sponsorship
+                                            Application</a></li>
                                     <li class="menu__item"><a class="menu__link" href="">Terms and Conditions</a></li>
                                 </ul>
                             </div>
@@ -330,7 +379,8 @@
                 <div class="footer__lower-icon">
                     <img class="img-center" src="/img/georgia_grown.png" alt="Fontis is Georgia Grown" />
                 </div>
-                <p class="footer__lower-copy">Copyright &copy;<span id="year"></span> Fontis Water Inc. All rights reserved.</p>
+                <p class="footer__lower-copy">Copyright &copy;<span id="year"></span> Fontis Water Inc. All rights
+                    reserved.</p>
             </div>
         </div>
     </footer>
@@ -338,6 +388,7 @@
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
         document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>   
+    </script>
 </body>
+
 </html>
