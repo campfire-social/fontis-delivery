@@ -61,7 +61,7 @@
                         </legend>
                         <div class="grid grid--center">
                             <!-- Two Bottles -->
-                            <div class="grid__cell">
+                            <div class="grid__cell grid__cell--1of3">
                                 <label id="twoBottles" class="option-box">
                                     <input class="option-box__input" type="radio" id="twoBottlesInput" name="water"
                                         value="2 bottles of water $59.94" onclick="calculateTotal()">
@@ -77,7 +77,7 @@
                                 </label>
                             </div>
                             <!-- Four Bottles -->
-                            <div class="grid__cell option-box">
+                            <div class="grid__cell grid__cell--1of3">
                                 <label id="twoBottles" class="option-box">
                                     <input type="radio" class="option-box__input" id="fourBottlesInput" name="water"
                                         value="4 bottles of water $43.80" onclick="calculateTotal()">
@@ -93,7 +93,7 @@
                                 </label>
                             </div>
                             <!-- 6 Bottles -->
-                            <div class="grid__cell">
+                            <div class="grid__cell grid__cell--1of3">
                                 <label id="twoBottles" class="option-box">
                                     <input type="radio" class="option-box__input" id="sixBottlesInput" name="water"
                                         value="6 bottles of water $59.94" onclick="calculateTotal()">
@@ -124,7 +124,7 @@
                         <legend class="section__legend text-center">Select your coffee quantity</legend>
                         <div class="grid grid--center">
                             <!-- One Bag -->
-                            <div class="grid__cell">
+                            <div class="grid__cell grid__cell--1of3">
                                 <label id="twoBottles" class="option-box">
                                     <input class="option-box__input" type="radio" id="oneBagInput" name="coffee"
                                         value="1 bag of coffee $15.00" onclick="calculateTotal()">
@@ -138,7 +138,7 @@
                                 </label>
                             </div>
                             <!-- Two Bags -->
-                            <div class="grid__cell">
+                            <div class="grid__cell grid__cell--1of3">
                                 <label id="twoBottles" class="option-box">
                                     <input class="option-box__input" type="radio" id="twoBagsInput" name="coffee"
                                         value="2 bags of coffee $30.00" onclick="calculateTotal()">
@@ -152,7 +152,7 @@
                                 </label>
                             </div>
                             <!-- Three Bags -->
-                            <div class="grid__cell">
+                            <div class="grid__cell grid__cell--1of3">
                                 <label id="twoBottles" class="option-box">
                                     <input class="option-box__input" type="radio" id="threeBagsInput" name="coffee"
                                         value="3 bags of coffee $45.00" onclick="calculateTotal()">
@@ -212,8 +212,8 @@
                             <div class="grid__cell grid__cell--2of3 payment-options">
                                 <fieldset>
                                     <legend class="payment-options__label">Payment Preference:</legend>
-                                    <div class="grid">
-                                        <div class="grid__cell grid__cell--1of3">
+                                    <div class="grid grid--sm">
+                                        <div class="grid__cell grid__cell--sm1of3">
                                             <label class="payment">
                                                 <input class="payment__input" type="radio" id="credit" name="paymentPreference"
                                                     value="Credit Card">
@@ -223,7 +223,7 @@
                                                 <span class="payment__bg"></span>
                                             </label>
                                         </div>
-                                        <div class="grid__cell grid__cell--1of3">
+                                        <div class="grid__cell grid__cell--sm1of3">
                                             <label class="payment">
                                                 <input class="payment__input"  type="radio" id="paypal" name="paymentPreference" value="PayPal">
                                                 <span class="payment__check"></span>
@@ -232,7 +232,7 @@
                                                 <span class="payment__bg"></span>
                                             </label>
                                         </div>
-                                        <div class="grid__cell grid__cell--1of3">
+                                        <div class="grid__cell grid__cell--sm1of3">
                                             <label class="payment">
                                                 <input class="payment__input"  type="radio" id="apple" name="paymentPreference"
                                                     value="Apple Pay">
