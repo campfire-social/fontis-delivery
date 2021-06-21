@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Fontis Water | Monthly Delivery</title>
-    <link rel="icon" href="/wp-content/themes/fontis2019/images/favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap"
         rel="stylesheet">
@@ -206,28 +206,37 @@
                                 </div>
                             </div>
                             <!-- Payment Info -->
-                            <div class="grid__cell grid__cell--2of3">
+                            <div class="grid__cell grid__cell--2of3 payment-options">
                                 <fieldset>
-                                    <legend class="visually-hidden">Payment Preference</legend>
-                                    <div>
-                                        <div>
-                                            <label>
-                                                <input type="radio" id="credit" name="paymentPreference"
+                                    <legend class="payment-options__label">Payment Preference:</legend>
+                                    <div class="grid">
+                                        <div class="grid__cell grid__cell--1of3">
+                                            <label class="payment">
+                                                <input class="payment__input" type="radio" id="credit" name="paymentPreference"
                                                     value="Credit Card">
-                                                <span>Credit Card</span>
+                                                <span class="payment__check"></span>
+                                                <span class="payment__label">Credit Card</span>
+                                                <img class="payment__img"  src="img/credit_card@2x.png" alt="Credit Card">
+                                                <span class="payment__bg"></span>
                                             </label>
                                         </div>
-                                        <div>
-                                            <label>
-                                                <input type="radio" id="paypal" name="paymentPreference" value="PayPal">
-                                                <span>PayPal</span>
+                                        <div class="grid__cell grid__cell--1of3">
+                                            <label class="payment">
+                                                <input class="payment__input"  type="radio" id="paypal" name="paymentPreference" value="PayPal">
+                                                <span class="payment__check"></span>
+                                                <span class="payment__label">PayPal</span>
+                                                <img class="payment__img"  src="img/paypal@2x.png" alt="PayPal">
+                                                <span class="payment__bg"></span>
                                             </label>
                                         </div>
-                                        <div>
-                                            <label>
-                                                <input type="radio" id="apple" name="paymentPreference"
+                                        <div class="grid__cell grid__cell--1of3">
+                                            <label class="payment">
+                                                <input class="payment__input"  type="radio" id="apple" name="paymentPreference"
                                                     value="Apple Pay">
-                                                <span>Apple Pay</span>
+                                                <span class="payment__check"></span>  
+                                                <span class="payment__label">Apple Pay</span>
+                                                <img class="payment__img" src="img/apple_pay@2x.png" alt="Apple Pay">
+                                                <span class="payment__bg"></span>
                                             </label>
                                         </div>
                                     </div>
@@ -241,10 +250,14 @@
                                             </span>
                                         </label>
                                     </div>
-                                    <div>
-                                        <button id="formSubmit" class="button button--submit" type="submit">Place
-                                            Order</button>
-                                        <img src="https://via.placeholder.com/140x100" alt="delivery van">
+                                    <div class="grid grid--center">
+                                        <div class="grid__cell">
+                                            <button id="formSubmit" class="button button--submit" type="submit">Place
+                                                Order</button>
+                                        </div>
+                                        <div class="grid__cell">
+                                            <img class="delivery" src="/img/ship@2x.png" alt="delivery van">
+                                        </div> 
                                     </div>
                                     <div class="disclaimer">
                                         <p class="disclaimer__text text-large text-gray">You will recive a call within
@@ -271,12 +284,12 @@
         </div>
     </aside>
     <footer class="footer section section--dark-blue">
-        <div class="container container--small">
+        <div class="container">
             <div class="footer__main grid">
                 <!-- Footer Info -->
-                <div class="grid__cell footer__info">
+                <div class="grid__cell grid__cell--1of5 footer__info">
                     <!-- Footer Logo -->
-                    <div>
+                    <div class="footer__logo">
                         <img src="/img/fontis_logo.png" alt="Fontis Water logo" />
                     </div>
                     <!-- Footer Social -->
@@ -319,9 +332,9 @@
                     </address>
                 </div>
                 <!-- Footer Nav -->
-                <nav class="grid__cell">
+                <nav class="grid__cell grid__cell--4of5">
                     <div class="grid">
-                        <div class="grid__cell">
+                        <div class="grid__cell grid__cell--1of4">
                             <div class="menu">
                                 <h4 class="menu__heading">Our Services</h4>
                                 <ul class="menu__list">
@@ -332,7 +345,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="grid__cell">
+                        <div class="grid__cell grid__cell--1of4">
                             <div class="menu">
                                 <h4 class="menu__heading">Products</h4>
                                 <ul class="menu__list">
@@ -344,7 +357,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="grid__cell">
+                        <div class="grid__cell grid__cell--1of4">
                             <div class="menu">
                                 <h4 class="menu__heading">About Us</h4>
                                 <ul class="menu__list">
@@ -358,7 +371,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="grid__cell">
+                        <div class="grid__cell grid__cell--1of4">
                             <div class="menu">
                                 <h4 class="menu__heading">Contact Us</h4>
                                 <ul class="menu__list">

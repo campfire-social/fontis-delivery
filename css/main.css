@@ -122,7 +122,7 @@ legend {
 }
 
 .container {
-    max-width: 86%;
+    max-width: 1140px;
     margin: 0 auto; 
     padding: 0 1.25rem;
 }
@@ -196,7 +196,7 @@ legend {
 
 .grid__cell {
     flex: 1 1 auto; 
-    padding: 1.25rem;
+    padding: 0 1.25rem;
 }
 
 .grid__cell--1of3 {
@@ -208,6 +208,22 @@ legend {
     flex: 1 1 66.66%; 
     max-width: 66.66%; 
 }
+
+.grid__cell--1of4 {
+    flex: 1 1 25%; 
+    max-width: 25%;
+}
+
+.grid__cell--1of5 {
+    flex: 1 1 20%; 
+    max-width: 20%;
+}
+
+.grid__cell--4of5 {
+    flex: 1 1 80%; 
+    max-width: 80%;
+}
+
 
 /*** Option Box ***/
 
@@ -225,7 +241,7 @@ legend {
     opacity: 0;
     cursor: pointer;
     height: 0;
-    width: 0;;
+    width: 0;
 }
 
 .option-box__select {
@@ -249,9 +265,10 @@ legend {
 }
 
 
-.option-box__input:checked + .option-box__select {
+/*.option-box__input:checked + .option-box__select {
     background-color: red!important;
 }
+*/
 
 
 .option-box__button {
@@ -308,6 +325,95 @@ legend {
     margin-bottom: 2.5rem; 
 }
 
+/*** Payment ***/
+
+.payment-options {
+    padding-left: 3rem;
+}
+
+.payment-options__label {
+    margin-left: -1.5rem;
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #133454;
+}
+
+.payment-options > * + * {
+    margin-top: 1.75rem;
+}
+
+.payment {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.payment__input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.payment__bg {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    border: 4px solid #133454;
+    background-color: transparent;
+    z-index: 0;
+}
+
+.payment__check {
+    position: absolute;
+    top: -1.25rem; 
+    right: -1.25rem;
+    height: 48px; 
+    width: 48px; 
+    border: 6px solid #efefef;
+    border-radius: 100px;
+    background-color: #133454;
+    background-image: url("/img/check@2x.png");
+    background-size: 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+    z-index: 3;
+}
+
+.payment__input:checked + .payment__check {
+    display: block;
+}
+
+.payment__input:checked ~ .payment__bg {
+    background-color: #ffffff;
+    border-width: 6px;
+}
+
+.payment__label {
+    order: 2;
+    text-transform: uppercase;
+    display: block; 
+    text-align: center;
+    margin-top: 1.25rem;
+    z-index: 1;
+}
+
+.payment__img {
+    display: block; 
+    margin: 0 auto;
+    order: 1;
+    height: 30px;
+    width: auto;
+    z-index: 1;
+}
+
 /*** Form Group ***/
 
 .form-group {
@@ -327,9 +433,9 @@ legend {
 }
 
 .form-group__input {
-    border: 1px solid #00163a;
+    border: 2px solid #00163a;
     color: #00163a;
-    padding: .75rem .5rem;
+    padding: .75rem 1rem;
     width: 100%;
     display: block;
 }
@@ -392,8 +498,10 @@ legend {
 }
 
 /*** Disclaimer ***/
+
 .disclaimer {
     max-width: 600px; 
+    margin-top: 1.5rem;
 }
 
 /*** Menu ***/
@@ -470,9 +578,22 @@ legend {
     margin-bottom: 1.5rem;
 }
 
-.footer__lower-copy {}
+.footer__lower-icon img {
+    max-width: 60px; 
+    width: 100%; 
+}
+
+.footer__logo img {
+    max-width: 130px;
+    width: 100%;
+}
 
 /*** Utility ***/
+
+.delivery {
+    max-width: 200px; 
+    width: 100%;
+}
 
 .hidden {
     display: none;
