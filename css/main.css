@@ -837,6 +837,36 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 /*** Utility ***/
+.coffee-select {
+    max-width: 540px;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+.coffee-select__label {
+    margin-left: -2rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    font-size: 1.25rem;
+}
+
+.select {
+   
+        border: 2px solid #00163a;
+        color: #00163a;
+        padding: .75rem 1rem;
+        width: 100%;
+        display: block;
+        -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;       /* Remove default arrow */
+   background-image: url('/img/arrow.svg'); 
+   background-repeat: no-repeat;
+   background-position: right 16px center;
+   background-size: 22px; 
+   padding-right: 36px; /* Add custom arrow */
+    
+}
 
 .delivery {
     max-width: 180px; 
