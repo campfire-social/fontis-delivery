@@ -1,124 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fontis Water | Thank you for your inquiry!</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' id='font-awesome-css'
+        href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.7.2' type='text/css'
+        media='all' />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <header>
-        <div>
-            <div>
-                <img src="https://via.placeholder.com/200x65" alt="Fontis Water logo" />
-            </div>
-            <div>
-                <p><span>Fontis Water</span> <span>//</span> Monthly Delivery</p>
+    <header class="header">
+        <div class="container">
+            <div class="header__logos">
+                <a class="header__logos-fontis" href="https://fontiswater.com/" target="_blank">
+                    <img src="/img/fontis_logo.png" alt="Fontis Water logo" />
+                </a>
+                <div class="header__logos-text">
+                    <p><span class="visually-hidden">Fontis Water</span> <span>//</span> Monthly Delivery</p>
+                </div>
             </div>
         </div>
+        <svg class="header__cutout" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2025.3 133.13"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="0 0 0 133.13 1012.29 133.13 306.37 0 0 0"/><polygon class="cls-1" points="1012.29 133.13 2025.3 133.13 2025.3 0 1716.31 0 1012.29 133.13"/></g></g></svg>
     </header>
     <main>
-        <div>
-            <div>
-                <h1>Success!</h1>
-                <p>Success message!</p>
+        <div class="section" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container container--small">
+                <div class="card">
+                    <div class="card__content text-center">
+                        <h1>Thank you for checking out<br/> Fontis Water & Coffee Monthly Delivery!</h1>
+                        <p>You will receive a call within 24 hours from our team for monthly delivery details like your address, payment info, and devilery schedule.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-    <aside>
-        <div>
-            <div>
-                <div>
-                    <p>Water: <span>Good for</span> your health</p>
-                    <p>Coffee: Good for <span>you</span>r heart</p>
+    <aside class="section section--light-blue" >
+        <div class="container container--extra-small">
+            <div class="display-banner" data-aos="fade-up" data-aos-duration="1000">
+                <div class="display-banner__group">
+                    <p class="display-banner__text">Water: <span class="text-white">Good for</span> your health</p>
+                    <p class="display-banner__text">Coffee: Good for <span class="text-white">you</span>r heart</p>
                 </div>
-                <p>- we should more of it</p>
+                <p class="display-banner__cite">- we should drink more of it</p>
             </div>
         </div>
     </aside>
-    <footer>
-        <div>
-            <div>
+    <footer class="footer section section--dark-blue">
+        <div class="container">
+            <div class="footer__main grid">
                 <!-- Footer Info -->
-                <div>
+                <div class="grid__cell grid__cell--1of5 footer__info">
                     <!-- Footer Logo -->
-                    <div>
-                        <img src="https://via.placeholder.com/200x65" alt="Fontis Water logo" />
-                    </div>
+                    <a class="footer__logo" href="https://fontiswater.com/" target="_blanl">
+                        <img src="/img/fontis_logo.png" alt="Fontis Water logo" />
+                    </a>
                     <!-- Footer Social -->
-                    <ul>
-                        <li><a href=""><span>Facebook</span></a></li>
-                        <li><a href=""><span>Instagram</span></a></li>
-                        <li><a href=""><span>LinkedIn</span></a></li>
-                        <li><a href=""><span>Twitter</span></a></li>
-                    </ul>
+                    <nav class="menu menu--social">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" href="" target="_blank">
+                                    <span class="visually-hidden">Facebook</span>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="" target="_blank">
+                                    <span class="visually-hidden">Instagram</span>
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                             </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="" target="_blank">
+                                    <span
+                                        class="visually-hidden">LinkedIn</span>
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="" target="_blank">
+                                    <span
+                                        class="visually-hidden">Twitter</span>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                     <!-- Footer Contact -->
                     <address>
-                        Fontis Water <br/>
-                        3929 Canton Rd <br/>
-                        Marietta, GA 30066 <br/>
-                        <a href="tel:+6784941981">678.494.1981</a>
+                        Fontis Water <br />
+                        3929 Canton Rd <br />
+                        Marietta, GA 30066 <br />
+                        <a class="footer__phone" href="tel:+6784941981">678.494.1981</a>
                     </address>
                 </div>
                 <!-- Footer Nav -->
-                <nav>
-                    <div>
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><a href="">Water Delivery</a></li>
-                            <li><a href="">Private Label Water</a></li>
-                            <li><a href="">Water Filtration</a></li>
-                            <li><a href="">Break Room Services</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Products</h4>
-                        <ul>
-                            <li><a href="">Fontis Bottled Water</a></li>
-                            <li><a href="">Coffee & Tea</a></li>
-                            <li><a href="">Equipment</a></li>
-                            <li><a href="">Other Beverages</a></li>
-                            <li><a href="">Breakroom Supplies</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>About Us</h4>
-                        <ul>
-                            <li><a href="">Our Water</a></li>
-                            <li><a href="">Our Staff</a></li>
-                            <li><a href="">FAQs</a></li>
-                            <li><a href="">Events</a></li>
-                            <li><a href="">Partners</a></li>
-                            <li><a href="">Media Resources</a></li>
-                            <li><a href="">Our Blog</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>Contact Us</h4>
-                        <ul>
-                            <li><a href="">Sign Up</a></li>
-                            <li><a href="">My Account</a></li>
-                            <li><a href="">Request a Quote</a></li>
-                            <li><a href="">Water Quality Report</a></li>
-                            <li><a href="">Donation Sponsorship Application</a></li>
-                            <li><a href="">Terms and Conditions</a></li>
-                        </ul>
+                <nav class="grid__cell grid__cell--4of5">
+                    <div class="grid">
+                        <div class="grid__cell grid__cell--1of4">
+                            <div class="menu">
+                                <h4 class="menu__heading">Our Services</h4>
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/our-services/water-delivery/" target="_blank">Water Delivery</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/our-services/private-label-water/" target="_blank">Private Label Water</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/our-services/water-filteration/" target="_blank">Water Filtration</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/our-services/break-room-services/" target="_blank">Break Room Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid__cell grid__cell--1of4">
+                            <div class="menu">
+                                <h4 class="menu__heading">Products</h4>
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/products/bottled-water/" target="_blank">Fontis Bottled Water</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/products/coffee-and-tea/" target="_blank">Coffee & Tea</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/products/equipment/" target="_blank">Equipment</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/products/other-beverages/" target="_blank">Other Beverages</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/products/breakroom-supplies/" target="_blank">Breakroom Supplies</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid__cell grid__cell--1of4">
+                            <div class="menu">
+                                <h4 class="menu__heading">About Us</h4>
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/about/our-water/" target="_blank">Our Water</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/about/our-staff/" target="_blank">Our Staff</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/faqs/" target="_blank">FAQs</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/events/" target="_blank">Events</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/about/partners/" target="_blank">Partners</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/about/media-resources/ target="_blank">Media Resources</a></li>
+                                    <li class="menu__item"><a class="menu__link" href=https://fontiswater.com/about/blog/" target="_blank">Our Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="grid__cell grid__cell--1of4">
+                            <div class="menu">
+                                <h4 class="menu__heading">Contact Us</h4>
+                                <ul class="menu__list">
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/account/sign-up" target="_blank">Sign Up</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/account/" target="_blank">My Account</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/request-a-quote/" target="_blank">Request a Quote</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/wp-content/uploads/2019/06/2019-Spring-Water-Quality-Analysis.pdf" target="_blank">Water Quality Report</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/donation-sponsorship-application/" target="_blank">Donation Sponsorship
+                                            Application</a></li>
+                                    <li class="menu__item"><a class="menu__link" href="https://fontiswater.com/terms/" target="_blank">Terms and Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>
-            <div>
-                <div>
-                    <img src="https://via.placeholder.com/200x65" alt="Fontis Water logo" />
+            <div class="footer__lower">
+                <div class="footer__lower-icon">
+                    <img class="img-center" src="/img/georgia_grown.png" alt="Fontis is Georgia Grown" />
                 </div>
-                <p>Copyright &copy;<span id="year"></span> Fontis Water Inc. All rights reserved.</p>
+                <p class="footer__lower-copy">Copyright &copy;<span id="year"></span> Fontis Water Inc. All rights
+                    reserved.</p>
             </div>
         </div>
     </footer>
+    
     <script type="text/javascript" src="js/bouncer.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+    
+    
     <script type="text/javascript">
         document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>   
+    </script>
 </body>
+
 </html>

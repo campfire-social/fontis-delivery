@@ -225,10 +225,18 @@ legend {
     align-items: center;
 }
 
+.grid--equal {
+    justify-content: stretch;
+}
+
 .grid__cell {
     flex: 1 1 auto; 
     padding: 0 1.25rem;
     margin-bottom: 3rem;
+}
+
+.grid__cell--sm {
+    padding: .5rem;
 }
 
 
@@ -462,16 +470,33 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 /*** Payment ***/
 
-.payment-options {
-    padding-left: 3rem;
+.payment {
+    height: 100%;
+}
+
+@media screen and (min-width: 800px) {
+    .payment-options {
+        padding-left: 3rem;
+    }
+    
 }
 
 .payment-options__label {
-    margin-left: -1.5rem;
+    
     display: block;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: #133454;
+    
+}
+
+@media screen and (min-width: 800px) {
+-options__label {
+        margin-left: -1.5rem;
+     
+    }
+    
+    
 }
 
 .payment-options > * + * {
@@ -546,9 +571,15 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display: block; 
     margin: 0 auto;
     order: 1;
-    height: 30px;
+    
     width: auto;
     z-index: 1;
+}
+
+@media screen and (min-width: 620px) {
+ .payment__img {
+    height: 30px;
+ }
 }
 
 /*** Form Group ***/
@@ -834,6 +865,27 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .logo-title__fontis {
     max-width: 140px;
+}
+
+/*** Card ***/
+
+.card {
+    max-width: 640px;
+    margin: 0 auto;
+    border: 1px solid #6b95ab;
+    padding: 1.5rem;
+}
+
+.card h1 {
+    font-size: 1.75rem; 
+}
+
+.card p {
+    font-size: 1.125rem;
+}
+
+.card__content >  * + * {
+    margin-top: 1.25rem;
 }
 
 /*** Utility ***/
