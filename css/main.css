@@ -224,6 +224,29 @@ legend {
     max-width: 80%;
 }
 
+/*** Headers ***/
+
+.header {
+    padding: 2.5rem 0;
+}
+
+.header__logos {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logos-fontis {
+    width: 140px;
+}
+
+.header__logos-text {
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+}
+
 
 /*** Option Box ***/
 
@@ -588,10 +611,33 @@ legend {
     width: 100%;
 }
 
+/*** Logos ***/
+
+.logo-title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo-title > * + * {
+    margin-left: 1.5rem;
+}
+
+.logo-title__coffee {
+    max-width: 80px;
+}
+
+.logo-title__x {
+    font-size: 1.25rem;
+}
+
+.logo-title__fontis {
+    max-width: 140px;
+}
+
 /*** Utility ***/
 
 .delivery {
-    max-width: 200px; 
+    max-width: 180px; 
     width: 100%;
 }
 
