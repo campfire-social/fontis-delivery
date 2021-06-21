@@ -147,6 +147,7 @@ legend {
 
 .section {
     padding: 6rem 0;
+    overflow-y: hidden;
 }
 
 .section--white {
@@ -380,10 +381,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 
-/*.option-box__input:checked + .option-box__select {
-    background-color: red!important;
+.option-box__input:checked + .option-box__select {
+    background-color: rgba(97, 194, 232, 0.10);
 }
-*/
+
 
 
 .option-box__button {
@@ -408,7 +409,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 @media screen and (min-width: 1140px) {
     .option-box__button {
-        min-width: 320px;
+        width: 100%;
     }
 }
 
@@ -426,7 +427,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .option-box__button-desc {
-    font-size: 1rem;
+    font-size: .8125rem;
     font-weight: 400;
     vertical-align: middle;
     text-transform: uppercase;

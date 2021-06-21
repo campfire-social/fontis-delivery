@@ -13,6 +13,7 @@
     <link rel='stylesheet' id='font-awesome-css'
         href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.7.2' type='text/css'
         media='all' />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 
@@ -31,7 +32,7 @@
         <svg class="header__cutout" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2025.3 133.13"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="0 0 0 133.13 1012.29 133.13 306.37 0 0 0"/><polygon class="cls-1" points="1012.29 133.13 2025.3 133.13 2025.3 0 1716.31 0 1012.29 133.13"/></g></g></svg>
     </header>
     <main>
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <div class="logo-title">
                     <div class="logo-title__coffee">
@@ -48,7 +49,7 @@
         <form name="Fontis Water and Coffee Delivery Form" action="/confirmation" id="fontisForm"
             netlify-honeypot="79537b3153f5b09c32defdb06d4dea35" data-netlify="true">
             <!-- Section One (Water) : BEGIN -->
-            <div class="section section--white">
+            <div class="section section--white" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
                 <div class="container">
                     <div class="hidden">
                         <label>Don’t fill this out if you’re human: <input
@@ -117,8 +118,8 @@
             </div>
             <!-- Section One (Water) : END -->
             <!-- Section Two (Coffee) : BEGIN -->
-            <div class="section section--dark-blue">
-                <div class="container">
+            <div class="section section--dark-blue" >
+                <div class="container" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="section__heading text-center">Step Two</h2>
                     <fieldset>
                         <legend class="section__legend text-center">Select your coffee quantity</legend>
@@ -183,8 +184,8 @@
             </div>
             <!-- Section Two (Coffee) : END -->
             <!-- Section Three (Info) : BEGIN -->
-            <div class="section section--light-gray">
-                <div class="container container--small">
+            <div class="section section--light-gray" >
+                <div class="container container--small" data-aos="fade-up" data-aos-duration="1000">
                     <h2 class="section__heading text-center">Step Three</h2>
                     <fieldset>
                         <legend class="section__legend text-center">Enter your delivery information</legend>
@@ -275,9 +276,9 @@
             <!-- Section Three (Info) : END -->
         </form>
     </main>
-    <aside class="section section--light-blue">
+    <aside class="section section--light-blue" >
         <div class="container container--extra-small">
-            <div class="display-banner">
+            <div class="display-banner" data-aos="fade-up" data-aos-duration="1000">
                 <div class="display-banner__group">
                     <p class="display-banner__text">Water: <span class="text-white">Good for</span> your health</p>
                     <p class="display-banner__text">Coffee: Good for <span class="text-white">you</span>r heart</p>
@@ -400,6 +401,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script type="text/javascript" src="js/bouncer.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript">
