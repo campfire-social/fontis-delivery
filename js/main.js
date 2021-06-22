@@ -98,7 +98,8 @@ $(document).ready(function(){
         }, 100);
   });
 
- 
+  $("#phone").inputmask({mask: "999-999-9999", placeholder: "XXX-XXX-XXX"});
+
     
 });
 
