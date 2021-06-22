@@ -81,3 +81,25 @@ function calculateTotal()
 
 var validate = new Bouncer('fontisForm');
 
+
+$(document).ready(function(){
+
+        $('.water-option').click(function() {
+            var target = $('#stepTwo');
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 100);
+      });
+
+      $('.coffee-option').click(function() {
+        var target = $('#stepThree');
+        $('html,body').animate({
+            scrollTop: target.offset().top
+        }, 100);
+  });
+
+ 
+    
+});
+
+

@@ -55,7 +55,7 @@
                         <label>Don’t fill this out if you’re human: <input
                                 name="79537b3153f5b09c32defdb06d4dea35" /></label>
                     </div>
-                    <h2 class="section__heading text-center">Step One</h2>
+                    <h2 id="stepOne" class="section__heading text-center">Step One</h2>
                     <fieldset>
                         <legend class="section__legend text-center">
                             Select your bottle quantity
@@ -63,7 +63,7 @@
                         <div class="grid grid--center">
                             <!-- Two Bottles -->
                             <div class="grid__cell grid__cell--1of3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
-                                <label id="twoBottles" class="option-box">
+                                <label id="twoBottles" class="option-box water-option">
                                     <input class="option-box__input" type="radio" id="twoBottlesInput" name="water" value="2 bottles of water $27.98" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
                                     <span class="option-box__button">
@@ -78,7 +78,7 @@
                             </div>
                             <!-- Four Bottles -->
                             <div class="grid__cell grid__cell--1of3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600">
-                                <label id="twoBottles" class="option-box">
+                                <label id="twoBottles" class="option-box water-option">
                                     <input type="radio" class="option-box__input" id="fourBottlesInput" name="water" value="4 bottles of water $43.80" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
                                     <span class="option-box__button">
@@ -93,7 +93,7 @@
                             </div>
                             <!-- 6 Bottles -->
                             <div class="grid__cell grid__cell--1of3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="900">
-                                <label id="twoBottles" class="option-box">
+                                <label id="twoBottles" class="option-box water-option">
                                     <input type="radio" class="option-box__input" id="sixBottlesInput" name="water" value="6 bottles of water $59.94" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
                                     <span class="option-box__button">
@@ -117,13 +117,13 @@
             <!-- Section Two (Coffee) : BEGIN -->
             <div class="section section--dark-blue" >
                 <div class="container" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="section__heading text-center">Step Two</h2>
+                    <h2 id="stepTwo" class="section__heading text-center">Step Two</h2>
                     <fieldset>
                         <legend class="section__legend text-center">Select your coffee quantity</legend>
                         <div class="grid grid--center">
                             <!-- One Bag -->
                             <div class="grid__cell grid__cell--1of3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
-                                <label id="twoBottles" class="option-box">
+                                <label id="twoBottles" class="option-box coffee-option">
                                     <input class="option-box__input" type="radio" id="oneBagInput" name="coffee"
                                         value="1 bag of coffee $15.00" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
@@ -137,7 +137,7 @@
                             </div>
                             <!-- Two Bags -->
                             <div class="grid__cell grid__cell--1of3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="600">
-                                <label id="twoBottles" class="option-box">
+                                <label id="twoBottles" class="option-box coffee-option">
                                     <input class="option-box__input" type="radio" id="twoBagsInput" name="coffee"
                                         value="2 bags of coffee $30.00" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
@@ -151,7 +151,7 @@
                             </div>
                             <!-- Three Bags -->
                             <div class="grid__cell grid__cell--1of3" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="900">
-                                <label id="twoBottles" class="option-box">
+                                <label id="twoBottles" class="option-box coffee-option">
                                     <input class="option-box__input" type="radio" id="threeBagsInput" name="coffee"
                                         value="3 bags of coffee $45.00" onclick="calculateTotal()">
                                     <span class="option-box__select"></span>
@@ -183,7 +183,7 @@
             <!-- Section Three (Info) : BEGIN -->
             <div class="section section--light-gray" >
                 <div class="container container--small" data-aos="fade-up" data-aos-duration="1000">
-                    <h2 class="section__heading text-center">Step Three</h2>
+                    <h2 id="stepThree" class="section__heading text-center">Step Three</h2>
                     <fieldset>
                         <legend class="section__legend text-center">Enter your delivery information</legend>
                         <div class="grid" >
@@ -398,7 +398,8 @@
             </div>
         </div>
     </footer>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/icheck.min.js"></script>
     <script type="text/javascript" src="js/bouncer.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
