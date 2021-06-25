@@ -92,10 +92,18 @@ $(document).ready(function(){
       });
 
       $('.coffee-option').click(function() {
-        var target = $('#stepThree');
+        var target = $('#coffeeOptions');
         $('html,body').animate({
             scrollTop: target.offset().top
         }, 100);
+
+    });
+
+        $('#coffeeGrind').change(function() {
+            var target = $('#stepThree');
+            $('html,body').animate({
+                scrollTop: target.offset().top
+            }, 100);
   });
 
   $("#phone").inputmask({mask: "999-999-9999", placeholder: "XXX-XXX-XXX"});

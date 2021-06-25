@@ -165,14 +165,22 @@
                                 </label>
                             </div>
                         </div>
-                        <div class="coffee-select">
-                            <label>
+                        <div class="coffee-select" id="coffeeOptions">
+                            <label id="coffeeKind">
                                 <span class="coffee-select__label">Kind:</span>
                                 <select class="select" name="coffeeType" id="coffeeSelect">
                                     <option value="">Please choose an option</option>
                                     <option value="regular">Regular</option>
                                     <option value="decaf">Decaf</option>
                                     <option value="organic">Organic</option>
+                                </select>
+                            </label>
+                            <label id="coffeeGrind">
+                                <span class="coffee-select__label">Grind:</span>
+                                <select class="select" name="coffeeGrind" id="coffeeGrind" >
+                                    <option value="">Please choose an option</option>
+                                    <option value="Whole Bean">Whole Bean</option>
+                                    <option value="Ground">Ground</option>
                                 </select>
                             </label>
                         </div>
@@ -211,32 +219,13 @@
                                 <fieldset>
                                     <legend class="payment-options__label">Payment Preference:</legend>
                                     <div class="grid grid--equal grid--sm">
-                                        <div class="grid__cell grid__cell--sm grid__cell--sm1of3">
+                                        <div class="grid__cell grid__cell--sm grid__cell--1of3">
                                             <label class="payment">
                                                 <input class="payment__input" type="radio" id="credit" name="paymentPreference"
                                                     value="Credit Card">
                                                 <span class="payment__check"></span>
                                                 <span class="payment__label">Credit Card</span>
                                                 <img class="payment__img"  src="img/credit_card@2x.png" alt="Credit Card" width="46" height="30">
-                                                <span class="payment__bg"></span>
-                                            </label>
-                                        </div>
-                                        <div class="grid__cell grid__cell--sm grid__cell--sm1of3">
-                                            <label class="payment">
-                                                <input class="payment__input"  type="radio" id="paypal" name="paymentPreference" value="PayPal">
-                                                <span class="payment__check"></span>
-                                                <span class="payment__label">PayPal</span>
-                                                <img class="payment__img"  src="img/paypal@2x.png" alt="PayPal">
-                                                <span class="payment__bg"></span>
-                                            </label>
-                                        </div>
-                                        <div class="grid__cell grid__cell--sm grid__cell--sm1of3">
-                                            <label class="payment">
-                                                <input class="payment__input"  type="radio" id="apple" name="paymentPreference"
-                                                    value="Apple Pay">
-                                                <span class="payment__check"></span>  
-                                                <span class="payment__label">Apple Pay</span>
-                                                <img class="payment__img" src="img/apple_pay@2x.png" alt="Apple Pay">
                                                 <span class="payment__bg"></span>
                                             </label>
                                         </div>
@@ -252,11 +241,11 @@
                                         </label>
                                     </div>
                                     <div class="grid grid--center">
-                                        <div class="grid__cell">
+                                        <div class="grid__cell grid__cell--sm2of3">
                                             <button id="formSubmit" class="button button--submit" type="submit">Place
                                                 Order</button>
                                         </div>
-                                        <div class="grid__cell">
+                                        <div class="grid__cell grid__cell--sm1of3">
                                             <img class="delivery" src="/img/ship@2x.png" alt="delivery van">
                                         </div> 
                                     </div>
