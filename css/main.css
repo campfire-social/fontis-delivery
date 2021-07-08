@@ -165,6 +165,7 @@ legend {
 .header {
     background-color: #133454;
     color: #ffffff;
+    overflow-y: hidden;
 }
 
 .container {
@@ -478,7 +479,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .header__cutout {
     position: absolute;
-    bottom: 0; 
+    bottom: -1px; 
     left: -9999px;
     right: -9999px;
     margin: 0 auto;
@@ -490,7 +491,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 @media screen and (min-width: 750px) {
     .header__cutout {
         position: absolute;
-        bottom: 0; 
+        bottom: -1px; 
         left: 0;
         right: initial;
         margin: 0 auto;
