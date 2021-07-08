@@ -14,7 +14,9 @@
         href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.7.2' type='text/css'
         media='all' />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/modaal.min.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
+    
 </head>
 
 <body>
@@ -54,7 +56,7 @@
                     </div>
                     <div class="button-group">
                         <a class="button" href="#fontisForm">Schedule a Delivery</a>
-                        <a class="button" href="#productDetails">Product Details</a>
+                        <a id="modalToggle" class="button" href="#moreInfo">Product Details</a>
                     </div>
                     </div>
                 </div>
@@ -287,6 +289,17 @@
             </div>
             <!-- Section Three (Info) : END -->
         </form>
+        <!-- Modaal -->
+        <div id="moreInfo" style="display: none">
+            <div class="product-info">
+                <h3>Fontis Mountain Spring Water:</h3>
+                <p>Many popular brands of bottled water are nothing more than filtered, municipal tap water. Fontis Water is pure, natural mountain spring water, sourced from a privately owned, deep-rock spring nestled high in the Blue Ridge Mountains of Georgia. Surrounded by unspoiled National Wilderness, our spring water is protected from contamination by industry or agriculture. </p>
+                <h3>Dancing Goats and Batdorf & Bronson Roasters:</h3>
+                <p>Since 1986, the Dancing Goats® Coffee Bar and Batdorf & Bronson® Roasters have been committed to ethical trading practices, sustainable roasting processes, and a relationship with the land, the people, and our team. We know that doing things the right way is the only way to make the  perfect cup of coffee. It’s the only way to make sure we can keep pouring them for years to come.</p>
+                <h3>Freshness Matters:</h3>
+                <p>Coffee is roasted to order daily, to ensure you receive the highest quality & most fresh coffee experience. In just a few days your coffee arrives on your doorstep, ready to be brewed into the best cup of coffee possible.</p>
+            </div>
+        </div>
     </main>
     <aside class="section section--light-blue" >
         <div class="container container--extra-small">
@@ -417,6 +430,7 @@
     <script type="text/javascript" src="js/icheck.min.js"></script>
     <script type="text/javascript" src="js/jquery.inputmask.min.js"></script>
     <script type="text/javascript" src="js/bouncer.min.js"></script>
+    <script type="text/javascript" src="js/modaal.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

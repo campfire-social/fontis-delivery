@@ -133,6 +133,11 @@ h2 {
     }
 }
 
+h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 legend {
     font-size: 1.125rem;
     font-weight: 700;
@@ -1208,8 +1213,41 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     width: 100%;
 }
 
+.product-info > * + * {
+    margin-top: 1rem;
+}
+
+.product-info {
+    color: #133454;
+}
+
 .hidden {
     display: none;
+}
+
+.modaal-content-container {
+    border: 2px solid #133454;
+}
+
+.modaal-close {
+    background-color: #fff;
+}
+
+.modaal-close:after, 
+.modaal-close:before {
+    background: #133454;
+}
+
+.modaal-close:hover {
+    background: #133454; 
+}
+
+.modaal-close:hover:after, 
+.modaal-close:hover:before,
+.modaal-close:focus:after, 
+.modaal-close:focus:before
+ {
+    background: #fff;
 }
 
 .visually-hidden {
