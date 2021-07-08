@@ -18,8 +18,14 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
+    <header >
+        <div class="headline">
+            <div class="container">
+                <p class="text-center">Free shipping on new subscriptions</p>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container">
             <div class="header__logos">
                 <a class="header__logos-fontis" href="https://fontiswater.com/" target="_blank">
                     <img src="/img/fontis_logo.png" alt="Fontis Water logo" />
@@ -28,12 +34,31 @@
                     <p><span class="visually-hidden">Fontis Water</span> <span>//</span> Monthly Delivery</p>
                 </div>
             </div>
-        </div>
+        </div>     
         <svg class="header__cutout" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2025.3 133.13"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="0 0 0 133.13 1012.29 133.13 306.37 0 0 0"/><polygon class="cls-1" points="1012.29 133.13 2025.3 133.13 2025.3 0 1716.31 0 1012.29 133.13"/></g></g></svg>
+        </div>
     </header>
     <main>
         <div data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
+                <div class="section section--main">
+                    <h1 class="page-title text-center">
+                        Ready to take this back to your place? 
+                    </h1>
+                    <div class="steps">
+                        <img class="steps__logo" src="/img/steps_1@4x.jpg" alt="water plus coffee equals delivery">
+                    
+                    <div class="steps__text text-center">
+                        <p class="text-large"><strong>Get roasted to order Dancing Goats coffee &amp; fresh mountain spring water by Fontis hand delivered to your front door!</strong></p>
+                        <p>Pause or cancel anytime.</p>
+                    </div>
+                    <div class="button-group">
+                        <a class="button" href="#fontisForm">Schedule a Delivery</a>
+                        <a class="button" href="#productDetails">Product Details</a>
+                    </div>
+                    </div>
+                </div>
+                <!--
                 <div class="logo-title">
                     <div class="logo-title__coffee">
                         <img src="/img/coffee-logo@2x.png" alt="Batdorf & Bronson / Dancing Goats" />
@@ -43,7 +68,8 @@
                         <img src="/img/fontis-dark@2x.png"alt="Fontis Water logo" />
                     </div>
                 </div>
-                <h1 class="visually-hidden">Batdorf & Bronson / Dancing Goats and Fontis Water Monthly Delivery</h1>
+                <h2 class="visually-hidden">Batdorf & Bronson / Dancing Goats and Fontis Water Monthly Delivery</h2>
+                -->
             </div>
         </div>
         <form name="Fontis Water and Coffee Delivery Form" action="/confirmation.html" id="fontisForm"
@@ -109,7 +135,7 @@
                         </div>
                     </fieldset>
                     <div class="section__footer">
-                        <p class="section__disclaimer">*price includes a water dispenser for $12.oo per month</p>
+                        <p class="text-large">*price includes a water dispenser for $12.oo per month</p>
                     </div>
                 </div>
             </div>
@@ -240,18 +266,18 @@
                                             </span>
                                         </label>
                                     </div>
-                                    <div class="grid grid--center">
-                                        <div class="grid__cell grid__cell--sm2of3">
-                                            <button id="formSubmit" class="button button--submit" type="submit">Place
+                                    <div class="order">
+
+                                            <button id="formSubmit" class="order__button button button--submit" type="submit">Place
                                                 Order</button>
-                                        </div>
-                                        <div class="grid__cell grid__cell--sm1of3">
-                                            <img class="delivery" src="/img/ship@2x.png" alt="delivery van">
-                                        </div> 
+                                   
+                                        
+                                            <img class="order__img delivery" src="/img/ship@2x.png" alt="delivery van">
+            
                                     </div>
                                     <div class="disclaimer">
                                         <p class="disclaimer__text text-large text-gray">You will recive a call within
-                                            24 hours <br /> from our team for monthly delivery details.</p>
+                                            24 hours from our team for monthly delivery details.</p>
                                     </div>
                                 </div>
                             </div>
