@@ -194,7 +194,7 @@ legend {
 
 .section {
     padding: 2rem 0;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .section--main > * + * {
@@ -303,7 +303,7 @@ legend {
 .grid {
     display: flex; 
     flex-direction: column;
-    margin: 0 -1.5rem;
+    margin: 0 -.75rem;
 }
 
 
